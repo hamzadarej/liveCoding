@@ -13,7 +13,7 @@ console.log(Math.ceil(num2));
 console.log(Math.ceil(num3));
 console.log(Math.ceil(num4));
 console.log(Math.ceil(num5));
-//b
+//b function roundup (num){let result =Math.ceil(num);console.log(result);}
 function roup (num)
 {return num = Math.floor(num)};
 
@@ -27,13 +27,7 @@ console.log(roup(28.329));
 let v1 = 27 ;
 let s1 = "Hi, my name is Hamza and I am ";
 console.log(s1+v1);
-// + its addition for numbers and for string and value add's the nummber whehe you want to put it
-//2 
-let v2 = "1005";
-let v3 ="10.05";
-console.log(parseFloat(v2));
-console.log(+v3);
-// parseFloat = +
+
 
 
 
