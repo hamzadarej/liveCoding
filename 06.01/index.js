@@ -59,5 +59,48 @@ console.log(Math.random()*10);
 console.log(Math.floor(Math.random()*10)+1); 
 //+ 1 to get a number between 1-10 without "+1" to get a number between 0-9
 
+//1== 1 -> true 
+// 1! =44 -> true we use == or =! to compare two value the results (true ,false)
+console.log(1 ==1);
+console.log(1!=2);
+console.log(1 == 1 && 1 == 10);
+console.log(1 == 1) || 2==1 ;
+// && = and , || = or 
+console.log ( 2==2 || 20==10|| 70==60 ); //the result will be true because one of them are true
+
+let bool1,bool2,bool3;
+bool1=true;
+bool2=false;
+console.log(bool1 && bool2 ? "cool" : "not cool");
+console.log(bool1 || bool2 ? "cool" : "not cool");
+// === ==
+let mum1 = "10";
+let mum2 = 10;
+console.log(mum1==mum2 ? "cool":"not cool");// == to compare just the value
+console.log(mum1===mum2 ? "cool":"not cool");// === to compare the value and the type of it 
+//1 = true 
+// 0 = false
+//""=false
+// ""=,"h"=true
+// false =false 
+// null =false
+console.log(null ? "yeah": "noo");
+//Create a program that prints a random integer from 1 - 6.
+console.log(Math.floor(Math.random()*6)+1);
+
+
+
+// Math.sqrt()  its give you the square root of the number for ex sqrt(81) its give you 9 if you multiply the number 9 by itself = 81
+console.log(Math.sqrt(9)) 
+console.log(Math.sqrt(100))
+console.log(Math.sqrt(81))
+
+console.log(Math.sqrt(-1))// the sqrt of a negative number returns NaN
+
+
+
+
+
+
 
 
