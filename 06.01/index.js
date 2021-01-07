@@ -8,7 +8,7 @@ else{return name+" ist noch young"}
 }
 console.log(add("hamza",27));
 console.log(add("anis",19))
-// + its addition for numbers and for string and value add's the nummber whehe you want to put it
+// + its addition for numbers and for string and value add's the nummber where you want to put it
 //2 
 let v2 = "10.05";
 let v3 ="11.05";
