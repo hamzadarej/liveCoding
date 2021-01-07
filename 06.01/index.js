@@ -8,7 +8,7 @@ else{return name+" ist noch young"}
 }
 console.log(add("hamza",27));
 console.log(add("anis",19))
-// + its addition for numbers and for string and value add's the nummber where you want to put it
+// + its addition for numbers and for string and value add's the nummber whehe you want to put it
 //2 
 let v2 = "10.05";
 let v3 ="11.05";
@@ -48,3 +48,16 @@ console.log(result)
 //toFixed()how many number you wanna have after the ,
 let num4=3;
 console.log(result.toFixed(num4))
+//1
+let v1 = 27 ;
+let s1 = "Hi, my name is Hamza and I am ";
+console.log(s1+v1);
+console.log(`${s1}${v1}`);
+// the "+" operator is combain the string and the number.
+//Math.ramdom you get a number between 0 and 1
+console.log(Math.random()*10);
+console.log(Math.floor(Math.random()*10)+1); 
+//+ 1 to get a number between 1-10 without "+1" to get a number between 0-9
+
+
+
