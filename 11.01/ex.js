@@ -66,6 +66,32 @@ console.log(24%7)
 a = !5>3 
 console.log(a)
 
-
-  
-  
+// Array 
+let fruits = ["apple","banana"];
+console.log(fruits.length);
+console.log(fruits[0]);
+console.log(fruits[fruits.length- 1])
+fruits.forEach(function(item,index,array) {
+    console.log(item,index);
+})
+let newFruits = fruits.push("orange")
+console.log(fruits);
+let last = fruits.pop();
+console.log(fruits);
+let first = fruits.shift()
+console.log(fruits)
+let newF = fruits.unshift("strawberry");
+console.log(fruits)
+fruits.push("mango");
+let pos = fruits.indexOf("banana");
+console.log(pos)
+console.log(fruits);
+let removed = fruits.splice(pos, 1)
+console.log(fruits);
+// 
+let vegetables = ["karot","kurbis","paprika","gurker"];
+let poss = 1 ;
+let n = 2;
+let removedItems = vegetables.splice(poss,n);
+console.log(vegetables);
+console.log(removedItems);
