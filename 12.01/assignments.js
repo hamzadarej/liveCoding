@@ -67,3 +67,52 @@ switch (expr) {
 
         }
 console.log(countEr("i","hi i'm hamza and i live in leipzig"));
+     // Ex 6
+     // first shape
+     function fristSh (number) {
+        for (let i = 0; i <= number; i++) {
+          ch=""
+          for (let j = 1; j <= i; j++) {
+              
+          ch=ch+"T";}
+           console.log(ch) 
+        }
+      }
+      
+      fristSh(4)
+// second shape
+      function secondSh () {
+        for (let i = 4 ; i >= 1; i--) {
+          ch=""
+          for (let j = 1; j <= i; j++) {
+              
+          ch=ch+"*";}
+           console.log(ch) 
+        }
+      }
+      secondSh()
+      // Third shape
+
+     function thirdSh () {
+        for (let i = 0; i <= 5; i++) {
+          ch=""
+          for (let j = 1; j <= i; j++) {
+              
+          ch=ch+j;}
+           console.log(ch) 
+        }
+      }
+      
+      thirdSh()
+      // Bonus shape
+      function BSh () {
+        for (let i = 5 ; i >= 1; i--) {
+          ch=""
+          for (let j = 1; j <= i; j++) {
+              
+          ch=ch+j;}
+           console.log(ch) 
+        }
+      }
+      BSh()
+      
