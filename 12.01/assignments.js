@@ -54,7 +54,16 @@ switch (expr) {
         break;
     case '12':
         console.log('December');}}
-        monthN("3")
-        // Ex 
+        monthN("4")
+        // Ex 5
 
+        function countEr (x,y){
+            let num=0;
+            for(let i=0 ; i < y.length ; i++){
+                if ( y[i]==x){
+                    num++;
+                }
+            }return num
 
+        }
+console.log(countEr("i","hi i'm hamza and i live in leipzig"));
