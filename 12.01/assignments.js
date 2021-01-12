@@ -115,4 +115,9 @@ console.log(countEr("i","hi i'm hamza and i live in leipzig"));
         }
       }
       BSh()
+      // Ex 7
+      let fruits = ["bannane","kiwi","Mango","melon"];
+      console.log(fruits.includes("mango"))
+     
+      
       
