@@ -1,5 +1,6 @@
-is about javascript course and practice:
+it's about javascript course and practice:
 
-number,String,boolean
-funktion,random,converting,Concatenation,Rounding ,
-math :Min & max
+Number,String,boolean
+functions,random,converting,Concatenation,Rounding ,Array
+math :(Min & max , random; floor ,ceil )
+str(.trim, length , includes , split , toUppercase ,toLowercase )
