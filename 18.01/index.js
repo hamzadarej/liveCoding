@@ -32,12 +32,7 @@ for (let i = 0; i <= 4; i++){
     console.log(drawShape);
     drawShape = '' ;
 }
-const names =["hamza","salim","anis"];
-for (let i =0 ; i< names.length; i++){
-let result = " ";
-console.log(`${names[i].charAt(0).toUpperCase()+names[i].slice(1)}`)
 
-}
 
  
 //Store Mark’s and John’s mass and height in variables.
@@ -70,6 +65,63 @@ return `${firstN} is a ${status}`;
 };
 firstZ = "hamza";
 age = 10 ;
-console.log(lifeStatus("salim",age));
+console.log(lifeStatus("salim",15));
+// switch
+function color (str2){
+switch (str2){
+    case "pink":
+        console.log("cool this is pink")
+        break;
+        case "red":
+        console.log("cool this is red")
+        break ;
+        case "white":
+        console.log("cool this is white")
+        break ;
+        default: console.log("chose other color")
+        
+  }      
+}
+(color("pink"))
+// Ex first letter to uppercase ["matt","sara","lara"]=>[ 'Matt', 'Sara', 'Lara' ]
+
+const names1 = ["matt","sara","lara"]
+
+const firstN= names1[0][0].toUpperCase()+names1[0].slice(1)
+let secontN= names1[1][0].toUpperCase()+names1[1].slice(1)
+let therthN= names1[2][0].toUpperCase()+names1[2].slice(1)
+
+console.log([firstN +","+secontN +","+therthN])
+// loup method
+const names = (arr)=>{
+for (let i = 0 ; i< arr.length; i++){
+
+ arr[i]= arr[i][0].toUpperCase()+ arr[i].substr(1).toLowerCase();
+}
+return arr
+};
+console.log(names(["matt","sara","lara"]));
+// ["Berlin","paris","prague","Rome"]=>Berlin, paris, prague, Rome.
+const city = (arrY) => {
+ let str = " ";
+    for(let i= 0; i < arrY.length; i++){
+    str += arrY[i];
+    if (i == arrY.length -1) {
+       str += "."; 
+    }else {str += ", "};
+}
+return str;
+};
+console.log(city(["Berlin","paris","prague","Rome"]));
 
 
+const family =(fam)=>{
+    
+    for( let i=0; i< fam.length ;i++){
+
+       console.log(`hallo ${fam[i]}, I am the index of ${i+1}`); 
+
+    }
+    
+};
+family(["susan","mark","salim"])
