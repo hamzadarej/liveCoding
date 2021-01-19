@@ -62,6 +62,7 @@ console.log(add);
 const addL = ["chaima","emna","hamza"];
 let subStrn = addL.slice(1).join().toUpperCase()
 
-console.log(subStrn)
+console.log(subStrn);
+
 
 
