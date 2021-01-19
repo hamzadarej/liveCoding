@@ -39,3 +39,29 @@ console.log(newArr)
 // crate a string from array
 let newArrJoin = newArr.join()
 console.log(newArrJoin)
+// .concat()
+// merge two or more arrays
+let arr1 = [1,33,55];
+let arr2 = [5,17,80];
+let arr3 = arr1.concat(arr2)
+console.log(arr3);
+// slice()
+const add = ["hammamet","nabeul"];
+let arrCopy = add ;
+console.log(arrCopy)
+arrCopy.push("Dubai");//to add
+console.log(add)
+arrCopy.pop() //to delete
+console.log(add)
+let shallowCopy = add.slice(); // to copy with slice will not update the original arrays 
+console.log(shallowCopy)
+shallowCopy.push("London")
+console.log(shallowCopy)
+console.log(add);
+
+const addL = ["chaima","emna","hamza"];
+let subStrn = addL.slice(1).join().toUpperCase()
+
+console.log(subStrn)
+
+
