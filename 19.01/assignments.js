@@ -44,28 +44,44 @@ console.log(countV("this is me"));
  [5, 10, 15, 20, 25] ➞ [5, 10, 15, 20, 25]*/
 const duplicate = (numD) => {
   let result = [];
-  let count;
+
   for (let i = 0; i < numD.length; i++) {
-    count = 0;
+    let count = 0;
     for (let j = 0; j < numD.length; j++) {
       if (numD[i] == numD[j]) {
         count++;
-        console.log(count);
       }
     }
-    if (count == 1 ) {
+    if (count == 1) {
       result.push(numD[i]);
+    } else {
     }
   }
 
   console.log(result);
   return result;
 };
+console.log(duplicateH([1, 4, 4, 7, 7, 7]));
+//                                                        the right one no duplicate
+const duplicateH = (str) => {
+  let result = [];
+  for (let i = 0; i < str.length; i++) {
+    for (let j = 0; j < str.length; j++) {
+      if (i !== j) {
+        if (str[i] === str[j]) {
+          str.splice(j, 1);
+        }
+      }
+    }
+  }
+  return str;
+};
+
+console.log(duplicateH([1, 4, 4, 7, 7, 7]));
 // i=0 / j=1 : 5 == 5 / 5==7/ 5==5 / 5 ==9 counter 2
 //i =1 /j =0 : 7==5 / 7==7 / 7== 5/ 7==9 counter 1
 //i = 2 j =0 : 5==5/ 5==7/ 5==5/ 5==9 counter 2
 //i=3 j=0 :  9==5/ 9==7/ 9==5/ 9==9 counter 1
-
 
 //                   0  1  2  3  4
 //console.log(findD([5, 7, 5, 7, 9]));
@@ -92,4 +108,4 @@ const dictionary = (strM, arrY) => {
 
   return results;
 };
-console.log(dictionary("bu", ["button", "breakfast", "border"]));
+console.log(dictionary("t", ["button", "breakfast", "border"]));
