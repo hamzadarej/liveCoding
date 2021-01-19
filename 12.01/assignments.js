@@ -1,123 +1,134 @@
 //Exercise 1
-function Exercise (num){
-    if (num <= 0){ return true ;
-}else {return false;}}
-console.log(Exercise(-1))
+function Exercise(num) {
+  if (num <= 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(Exercise(-1));
 //Ex 2
-function dogAge (age) {
-    if (dAge=age *7){
-        return ("your dog is "+dAge+" years old in dog years")
-    }
+function dogAge(age) {
+  if ((dAge = age * 7)) {
+    return "your dog is " + dAge + " years old in dog years";
+  }
 }
 console.log(dogAge(5));
 //Ex 3
-function calcSnack (person,age,dayAmount){
-    if (restLifeSnack =(100 -age) *dayAmount*365){
-        return (person+" will consume " +restLifeSnack+" Units"+" till 100 years old" )}
+function calcSnack(person, age, dayAmount) {
+  if ((restLifeSnack = (100 - age) * dayAmount * 365)) {
+    return (
+      person +
+      " will consume " +
+      restLifeSnack +
+      " Units" +
+      " till 100 years old"
+    );
+  }
 }
-console.log(calcSnack("Hamza",25,2));
-console.log(calcSnack("Salim",30,3));
+console.log(calcSnack("Hamza", 25, 2));
+console.log(calcSnack("Salim", 30, 3));
 //Ex 4
-function monthN (expr){
-switch (expr) {
-  case '1':
-    console.log('january');
-    break;
-  case '2':
-     console.log('February');
-    break;
-  case '3':
-     console.log('March');
-    break;
-  case '4':
-    console.log('April');
-    break;
-     case '5':
-    console.log('May');
-    break;
-    case '6':
-        console.log('june');
-        break;
-    case '7':
-         console.log('July');
-        break;
-    case '8':
-         console.log('August');
-        break;
-    case '9':
-        console.log('September');
-        break;
-    case '10':
-        console.log('October');
-    case '11':
-            console.log('Novamber');
-        break;
-    case '12':
-        console.log('December');}}
-        monthN("4")
-        // Ex 5
+function monthN(expr) {
+  switch (expr) {
+    case "1":
+      console.log("january");
+      break;
+    case "2":
+      console.log("February");
+      break;
+    case "3":
+      console.log("March");
+      break;
+    case "4":
+      console.log("April");
+      break;
+    case "5":
+      console.log("May");
+      break;
+    case "6":
+      console.log("june");
+      break;
+    case "7":
+      console.log("July");
+      break;
+    case "8":
+      console.log("August");
+      break;
+    case "9":
+      console.log("September");
+      break;
+    case "10":
+      console.log("October");
+    case "11":
+      console.log("Novamber");
+      break;
+    case "12":
+      console.log("December");
+  }
+}
+monthN("4");
+// Ex 5
 
-        function countEr (x,y){
-            let num=0;
-            for(let i=0 ; i < y.length ; i++){
-                if ( y[i]==x){
-                    num++;
-                }
-            }return num
+function countEr(x, y) {
+  let num = 0;
+  for (let i = 0; i < y.length; i++) {
+    if (y[i] == x) {
+      num++;
+    }
+  }
+  return num;
+}
+console.log(countEr("i", "hi i'm hamza and i live in leipzig"));
+// Ex 6
+// first shape
+function fristSh(number) {
+  for (let i = 0; i <= number; i++) {
+    ch = "";
+    for (let j = 1; j <= i; j++) {
+      ch = ch + "T";
+    }
+    console.log(ch);
+  }
+}
 
-        }
-console.log(countEr("i","hi i'm hamza and i live in leipzig"));
-     // Ex 6
-     // first shape
-     function fristSh (number) {
-        for (let i = 0; i <= number; i++) {
-          ch=""
-          for (let j = 1; j <= i; j++) {
-              
-          ch=ch+"T";}
-           console.log(ch) 
-        }
-      }
-      
-      fristSh(4)
+fristSh(4);
 // second shape
-      function secondSh () {
-        for (let i = 4 ; i >= 1; i--) {
-          ch=""
-          for (let j = 1; j <= i; j++) {
-              
-          ch=ch+"*";}
-           console.log(ch) 
-        }
-      }
-      secondSh()
-      // Third shape
+function secondSh() {
+  for (let i = 4; i >= 1; i--) {
+    ch = "";
+    for (let j = 1; j <= i; j++) {
+      ch = ch + "*";
+    }
+    console.log(ch);
+  }
+}
+secondSh();
+// Third shape
 
-     function thirdSh () {
-        for (let i = 0; i <= 5; i++) {
-          ch=""
-          for (let j = 1; j <= i; j++) {
-              
-          ch=ch+j;}
-           console.log(ch) 
-        }
-      }
-      
-      thirdSh()
-      // Bonus shape
-      function BSh () {
-        for (let i = 5 ; i >= 1; i--) {
-          ch=""
-          for (let j = 1; j <= i; j++) {
-              
-          ch=ch+j;}
-           console.log(ch) 
-        }
-      }
-      BSh()
-      // Ex 7
-      let fruits = ["bannane","kiwi","Mango","melon"];
-      console.log(fruits.includes("mango"))
-     
-      
-      
+function thirdSh() {
+  for (let i = 0; i <= 5; i++) {
+    ch = "";
+    for (let j = 1; j <= i; j++) {
+      ch = ch + j;
+    }
+    console.log(ch);
+  }
+}
+
+thirdSh();
+// Bonus shape
+function BSh() {
+  for (let i = 5; i >= 1; i--) {
+    ch = "";
+    for (let j = 1; j <= i; j++) {
+      ch = ch + j;
+    }
+    console.log(ch);
+  }
+}
+BSh();
+// Ex 7
+let fruits = ["bannane", "kiwi", "Mango", "melon"];
+console.log(fruits.includes("mango"));
+

@@ -125,3 +125,37 @@ const family =(fam)=>{
     
 };
 family(["susan","mark","salim"])
+//array
+const [a,...rest]=names1
+console.log(rest)
+// converting function to ES6 Arrow
+function randomN1() {
+    return Math.random;
+  }
+  
+  let randomN = () => Math.random;
+  console.log(randomN1());
+
+  // map
+ let companys = ["bwm","audi","renaut","mercedez"];
+
+ const companyNames = companys.map(companys => companys[0].toUpperCase()+companys.substr(1));
+     
+ console.log(companyNames)
+ //
+ ages =[15,28,36,44,46,49,55,58]
+ let ageSum = 0;
+ for (let i = 0;i < ages.length;i++){
+     ageSum +=ages[i];
+ }
+ console.log(ageSum)
+  
+ const comN = (str5)=>{
+    for(let i= 0 ; i < str5.length ; i++){
+   
+    str5[i] = str5[i][0].toUpperCase()+str5.slice(1).toLowerCase()
+    } 
+    return str;
+   };
+    console.log(comN(["hama"]));
+    
