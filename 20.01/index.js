@@ -29,4 +29,57 @@ console.log(bool);
 const arr4 =["go","we","home","i","let"]
 console.log(arr4.lastIndexOf("i"))//=>3
 console.log(arr4.slice(3,4))//=>"i" we can limit it with number to get exactly what we need
-console.log(arr4.splice(3))//=> "i,let"to print out every element after the number that we put it till the end of the array
+console.log(arr4.splice(3))//=> "i","let" to print out every element after the number that we put it till the end of the array
+//.fill()#
+ //        0  1  2 3 4 5 6
+let arr5 =[22,34,6,7,4,4,3];
+let newArr5 = arr5.fill(20,1,4); //fill replace the element inside by giving the position to replace it .fill(15,1,3)from 1 till 3 //3-1=2 will be changed
+console.log(newArr5);
+// do if its faulthy its print one time the counter that we declare it in our exemple =0 
+let counter = 0;
+
+do {
+console.log(counter);
+counter++;
+} while (counter > 3)
+// while
+let loopOne = 13;
+while(loopOne <= 14){loopOne++; // if its true => loopona +1 = 14+1=15
+    
+}
+console.log(loopOne)
+
+//if  
+/*let loopOne1 = 0;
+if(loopOne1 <= 5){loopOne1++;}
+console.log(loopOne1)*/
+/*const countV = (strC) => {
+    let result = 0;
+    let vowels = ["a", "e", "i", "o", "u"];
+    
+    for (let i = 0; i < strC.length; i++) {
+      if (strC[i] ==  "e" )  {
+        result++;
+      }{if (strC[i] ==  "a" )  {
+        result++;
+      }{if (strC[i] ==  "o" )  {
+        result++;
+      }}{if (strC[i] ==  "u" )  {
+        result++;
+      }}{if (strC[i] ==  "i" )  {
+        result++;
+      }
+    }}}
+  
+    return result;
+  };
+  console.log(countV("this is me and my family we are living here about 3 years"));*/
+  let counts = 0;
+  let vowels = ["a", "e", "i", "o", "u"];
+  let text = ("im here for while")
+  do {
+      
+      counts++;
+
+  }while(text.includes(vowels.toString(''))){counts++}
+  console.log(counts)
