@@ -24,7 +24,7 @@ printFun("hamza",27,"coding","cooking","techno","playstation");
 const numbers =(...nums)=>{
     console.log(nums[nums.length -1]);
 };
-numbers(2,4,5,7,8,6)//=> 6 */
+numbers(2,4,5,7,8,6)//=> 6 
 //cool functions
 (function printName(c,v){
     console.log(`hi i am cool function ${c+v}`);
@@ -32,13 +32,39 @@ numbers(2,4,5,7,8,6)//=> 6 */
 const printName1=(a,z)=>{
     return `hi i am cool function ${a+z}`
 }
-console.log(printName1(5,4));
-// assignments
+console.log(printName1(5,4));*/
+// assignments 
+//1
 const twofer=(str)=>{
     str1 = str
     str1="you"
     return `Two for me and one for ${str||str1}`
 }
 console.log(twofer("fran"))
-    
+console.log(twofer())
+//2
+const calculP =(num,num1)=>{
+    exp=2;
+    return Math.pow(num,num1||exp)
+
+};
+console.log(calculP(3,7));
+console.log(calculP(3));
+//3
+const howManyArgs =(...arr)=>{
+
+return arr.length;
+}
+console.log(howManyArgs("better",false,1))
+4//
+const sum=(...arrs)=>{
+    count = 0;
+    for(let i=0;i<arrs.length;i++){
+        count += arrs[i]
+    }
+    return count
+}
+console.log(sum(25, 25, 20))
+console.log(sum(1, 15))
+
     
