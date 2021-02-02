@@ -10,7 +10,7 @@ console.log(main(3, 4));
 // Nested scopes
 let cool = true; //global variable
 const outerFunction = (x, y) => {
-  let big = true;
+  let big = true;            //function scope
   const innerFunction = (num) => {
     return num / 2;
   };
@@ -32,10 +32,11 @@ console.log(add());
 const check = (() => {
   let x = [" is cool one"];
   return () => {
-    x.unshift("javascript");
+    x.unshift(" javascript ");
     return x.join("");
   };
 })();
+console.log(check());
 console.log(check());
 // SIAF
 // self-invoking anonymous function
@@ -168,7 +169,7 @@ const monthCheck = (str) => {
     : `You have entered ${month}, which is in ${currM} `;
 };
 console.log(monthCheck("I love june"));
-console.log(monthCheck("We need Kartoffel"));
+console.log(monthCheck("We need marcH"));
 console.log(monthCheck("I love october"));
 
 let num = 5.49;
@@ -179,4 +180,38 @@ console.log(Math.random(num * 100));
 console.log(Math.round(num))
 console.log(Math.sign(num))//=> return 1 as positive/-1 as negative
 
+
+//
+const monthF=(str)=>{
+let months = [
+    "december",
+    "january",
+    "february",
+    "march",
+    "april",
+    "may",
+    "june",
+    "july",
+    "august",
+    "september",
+    "october",
+    "november",
+  ];
+  let seasons = ["Winter", "Spring", "Summer", "Autumn"];
+  let seaseon = str
+  .split(" ")
+  .filter((m)=>months.includes(m))
+  .join(" ")
+return seasons[Math.floor(months.indexOf(seaseon)/3)]
+}
+console.log(monthF("this is january"))
+//                   scope
+
+foo=()=>{
+ //var 
+  a=45;
+
+}
+foo()
+console.log(a);
 
