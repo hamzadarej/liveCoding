@@ -132,18 +132,18 @@ const signs = [
     {name: "Capricorn",start: "22-12", end: "20-01"},
     {name: "Aquarius", start: "20-01", end: "19-02"},
     {name: "Pisces",   start: "19-02", end: "21-03"},
-  ]
+  ];
   console.log("------------zzz-------------");
   const zodiac =(str)=>{
       
-dateCounter=parseInt(str.slice(0,2))+parseInt(str.slice(3,5))*30
-const date=signs.filter((a)=>parseInt(a.start.slice(0,2))+parseInt(a.start.slice(3,5)*30)<dateCounter&&parseInt(a.end.slice(0,2))+parseInt(a.end.slice(3,5)*30)>dateCounter)
+var dateCounter=parseInt(str.slice(0,2))+parseInt(str.slice(3,5))*30;
+const date=signs.filter((a)=>parseInt(a.start.slice(0,2))+parseInt(a.start.slice(3,5)*30)<=dateCounter&&parseInt(a.end.slice(0,2))+parseInt(a.end.slice(3,5)*30)>=dateCounter);
 
-return date[0]["name"]
-}
-console.log(zodiac("10-06"))
-console.log(zodiac("14-02"))
-console.log(zodiac("27-07-2020"))
+return date[0]["name"];
+};
+console.log(zodiac("19-02"))
+console.log(zodiac("21.03"))
+console.log(zodiac("27-07-1992"))
 
  
 
