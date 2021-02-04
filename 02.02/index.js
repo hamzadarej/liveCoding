@@ -155,6 +155,22 @@ const listProp =(obj)=>{
 }
 console.log(listProp(students))
 
+// object.entrie()
+
+const objectToArray={
+    cats:1,
+    dogs:2,
+    turtles:4,
+};
+//Expected output
+/*function getKeysandValues(obj){
+    return object.entries(obj);
+}
+console.log(getObjectValues(objectToArray))*/
+
+
+
+
 
 
     
