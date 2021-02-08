@@ -10,7 +10,7 @@ console.log(main(3, 4));
 // Nested scopes
 let cool = true; //global variable
 const outerFunction = (x, y) => {
-  let big = true;            //function scope
+  let big = true;    //function scope
   const innerFunction = (num) => {
     return num / 2;
   };
@@ -49,7 +49,7 @@ console.log(check());
     console.log("hi");l
 })();*/
 //IIFE
-// Immdediatly-invoked Function Expression
+// Immediately-invoked Function Expression
 const sum = ((x, y) => {
   return x + y;
 })(3, 4);
@@ -154,9 +154,7 @@ const monthCheck = (str) => {
     "november",
   ];
   let seasons = ["Winter", "Spring", "Summer", "Autumn"];
-  /*const currentSe =(monthName)=>{
-    return seasons[Math.floor(months.indexOf(monthName)/3)]
-}*/
+  
 
   let month = str
     .toLowerCase()
