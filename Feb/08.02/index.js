@@ -72,10 +72,48 @@ console.log("------------------------------------------")
 // functions inside functions
 function main(str1, str2) {
     function second(n) {
-      return n.slice(0,1).toUpperCase()+n.slice(1);
+      return n.slice(0,1).toUpperCase()+n.slice(1).toLowerCase();
     }
     return second(str1) +" " +second(str2);
   }
-  console.log(main("hamza", "salim"));
+  console.log(main("hamza", "salIm"));
 
+  let box;
+  for(let i=0;i<=5;i++){
+      box ="";
+      for(let j=0;j<i;j++){
+          box += "+";
+      }
+      console.log(box)
+  }
+// functions that return other function
+  const viewsCh = (() => {
+    let x = (" view ");
+    count=0;
+    return () => {
+        count++
+      if(count >1){x=(" views ")}
+      return count+x;
+    };
+  })();
+  console.log(viewsCh());
+  console.log(viewsCh());
+  console.log(viewsCh());
+
+  console.log("------------------------------------------")
+
+// Immediately-invoked Function Expression
+const sum = ((x,y) => {
+  console.log(x + y);
+})(3,4);
+
+//SIAF
+
+(function(){
+    let today = new Date();
+    let month=today.getMonth();
+    let year=today.getFullYear();
+    let day = today.getDate();
+    console.log(`${day}/${month}/${year}`);
+})();
   
