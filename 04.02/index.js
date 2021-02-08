@@ -163,7 +163,7 @@ console.log(zodiac("17.09"));
 console.log(zodiac("27-07-1992"));
 
 
-console.log("-------------------------");
+
 
 
 
