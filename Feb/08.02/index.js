@@ -99,6 +99,7 @@ function main(str1, str2) {
   console.log(viewsCh());
   console.log(viewsCh());
   console.log(viewsCh());
+  console.log(viewsCh());
 
   console.log("------------------------------------------")
 
@@ -111,9 +112,10 @@ const sum = ((x,y) => {
 
 (function(){
     let today = new Date();
-    let month=today.getMonth();
+    let month=today.getMonth()+1;
     let year=today.getFullYear();
     let day = today.getDate();
     console.log(`${day}/${month}/${year}`);
 })();
-  
+let strWithChr = "I'am   \n Hi";
+console.log(strWithChr);

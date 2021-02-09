@@ -53,7 +53,7 @@ console.log(check());
 const sum = ((x, y) => {
   return x + y;
 })(3, 4);
-console.log(sum);
+console.log(sum); 
 
 // write a function add that uses a closure that performs addition on arguments in two separate function calls.
 //add(2)(3)
