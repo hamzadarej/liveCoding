@@ -125,14 +125,14 @@ console.log(str.trim()); //=>to ignore the emptyspace
 let text = "hey its me.";
 console.log(text.startsWith("h")); //=>true
 console.log(text.endsWith("."));
-console.log("_                       break                   _");
+console.log("_                       break                  _");
 // charAt
 let chr = "@";
 console.log(chr.charAt(0)); //=>i
 console.log(chr[0]); //=>i
 const ages = [28, 22, 15, 16, 17, 45, 33, 26, 19];
 console.log(ages[0]);
-console.log("_                       break                   _");
+console.log("_                       break                  _");
 // charCodeAt()
 console.log(chr.charCodeAt(0)); //=>a =97
 // @=64
