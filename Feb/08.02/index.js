@@ -67,7 +67,7 @@ add:"L",
 for(prop in person){
     console.log(`${prop}: ${person[prop]}`)
 }
-console.log("------------------------------------------")
+console.log("-----------------------------------------")
 
 // functions inside functions
 function main(str1, str2) {
