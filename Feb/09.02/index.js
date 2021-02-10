@@ -104,7 +104,7 @@ let student = {
   };
   console.log(arrOfPop(student))
 
-console.log("-----------------------------")
+console.log("----------------------------")
   //4
   let first = {firstName: "John"}
 let last = {lastName: "Smith"}
