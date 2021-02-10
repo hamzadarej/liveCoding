@@ -117,3 +117,8 @@ function twoObj(obj1,obj2){
 
 }
 console.log(twoObj(first,last))
+//4 other exemple
+const makeItIntoOne=(obj1,obj2)=>{
+  return Object.assign(obj1,obj2)
+}
+console.log(makeItIntoOne(first,last))
