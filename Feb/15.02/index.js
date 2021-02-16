@@ -1,4 +1,4 @@
-class person {
+/*class person {
   constructor(_name, _age) {
     this.name = _name;
     this.age = _age;
@@ -54,9 +54,9 @@ function isPandigital(num) {
 //Create a function that takes a variable number of arguments, each argument representing the number of items in a group, and returns the number of permutations (combinations) of items that you could get by taking one item from each group.
 /*combinations(2, 3) ➞ 6
 
-combinations(3, 7, 4) ➞ 84
+//combinations(3, 7, 4) ➞ 84
 
-combinations(2, 3, 4, 5) ➞ 120*/
+//combinations(2, 3, 4, 5) ➞ 120
 
 
 function combinations(...items) {
@@ -71,10 +71,74 @@ function combinations(...items) {
 return result.reduce((p,cur)=>{return p*cur;});
   
 }
-console.log(combinations(3,0,4))
+console.log(combinations(3,0,4));
+console.log(combinations(2, 3, 4, 5));
 console.log("----------------------")
 
-    
-    
+
+function getTotalPrice(groceries) {
+	let groFilter=groceries.map((el)=>el.quantity*el.price)
+  let resultD=groFilter.reduce((el,i)=>el+i).toFixed(1)
+  return parseFloat(resultD)
+}
+console.log(getTotalPrice([
+  { product: "Milk", quantity: 1, price: 1.50 }
+]))
+console.log(getTotalPrice([
+  { product: "Milk", quantity: 1, price: 1.50 },
+  { product: "Eggs", quantity: 12, price: 0.10 },
+  { product: "Bread", quantity: 2, price: 1.60 },
+  { product: "Cheese", quantity: 1, price: 4.50 }
+]))
+console.log(getTotalPrice([
+  { product: "Chocolate", quantity: 1, price: 0.10 },
+  { product: "Lollipop", quantity: 1, price: 0.20 }
+]))
+
+function convert(deg) {
+	let parDeg=parseFloat(deg)
+ let cCaluc=((parDeg-32)*5/9).toFixed()
+  let fCalcul=((parDeg*9)/5+32).toFixed()
+  if(deg.endsWith("F")&&cCaluc<350){result=`${cCaluc}°C`}
+  if(deg.endsWith("C")){result=`${fCalcul}°F`}
+  else{"Error"}
+  
+  
+
+return result
+}
+
+console.log(convert("35°C"))
+console.log(convert("19°F"))
 
 
+function chosenWine(wines) {
+
+  const wh =wines.sort(function(a,b){
+   return a.price-b.price
+   
+  })
+
+ //if(wh[0].hasOwnProperty('price')){return "null"}else{return wh}
+ 
+  return wh.length==0?"null":wh[1].name;
+}
+console.log(chosenWine([
+  { name: "Wine A", price: 8.99 },
+  { name: "Wine 32", price: 13.99 },
+  { name: "Wine 9", price: 10.99 }
+]))
+console.log(chosenWine([]))
+*/
+
+function toArray(obj) {
+	return Object.entries(obj)
+}
+console.log(toArray({ a: 1, b: 2 }) )
+function redundant(str) {
+	 function first(){
+		console.log(str);
+	}
+	return first() ;
+}
+redundant("apple");
