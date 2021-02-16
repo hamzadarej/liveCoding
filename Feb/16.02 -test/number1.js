@@ -12,4 +12,4 @@ function validPin(pin) {
     console.log(validPin("1624"))
     console.log(validPin("5p46"))
     console.log(validPin("4446"))
-    console.log(validPin("6626"))
+    
