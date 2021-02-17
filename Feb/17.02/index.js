@@ -56,9 +56,17 @@ console.log(isSet([
 console.log(espVerb("pasar"))
 console.log(espVerb("unir"))
 console.log(espVerb("corre"))
+//Create a RegExp myRegExp to test if a string is a valid pin or not.
 
+//A valid pin has:
+
+//Exactly 4 or 6 characters.
+//Only numerical characters (0-9).
+//No whitespace.
 const myRegExp = new RegExp( /^(\d{4})?(\d{6})?$/)
-console.log(myRegExp.test(""))
+console.log(myRegExp.test("4569"))
+console.log(myRegExp.test("41h9"))
+console.log(myRegExp.test("456987"))
 //Regular Expression
 var str="i love we deVL abcde";
 let result=str.replace(/[a-e]/ig,"@");//i =case insensitive low/upper case//g=Global all the char//^=reverse ,do the opposite like ! we can use it just in the [^l].
