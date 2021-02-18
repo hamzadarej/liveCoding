@@ -65,7 +65,7 @@ console.log(espVerb("corre"))
 //No whitespace.
 const myRegExp = new RegExp( /^(\d{4})?(\d{6})?$/)
 console.log(myRegExp.test("4569"))
-console.log(myRegExp.test("41h9"))
+console.log(myRegExp.test("41h9 "))
 console.log(myRegExp.test("456987"))
 //Regular Expression
 var str="i love we deVL abcde";
@@ -75,3 +75,5 @@ var str = "The best things in life are free";
 var patt = new RegExp("e");
 var res = patt.test(str);
 console.log(res)
+const checkEmail=new RegExp(/^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/);
+console.log(checkEmail.test("26a@sd.com"));
