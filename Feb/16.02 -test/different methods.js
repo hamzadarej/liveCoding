@@ -6,7 +6,7 @@ function validPin(pin) {
     if(pin[i]==pin[i+1]){counter++}
     }
     result=pin.split().map((a)=>a.length==4 && a[a.length -1]%2==0 &&parseInt(a)==a && sum>=5&&counter<=2)
-     return result.join()
+     return result.join("")
         
     }
     console.log(validPin("1624"))
