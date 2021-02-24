@@ -15,10 +15,29 @@ nav{
     min-height: 8vh;
     background-color: indianred;
 }
+nav>li{
+    display: inline-block;
+}
 .caktusimage{
     width: 40%;
     height: 40%;
 }
 body{
-    background-color :grey;
+    background-color :rgb(173, 149, 149);
+    font-size: 24px;
+}
+p{
+    color: rgb(127, 165, 152);
+    
+}
+nav ul li a{
+    color: black;
+    font-size: medium;
+}
+nav ul {
+    background-color: rgb(211, 146, 61);
+}
+.chars{
+    color: chartreuse;
+    
 }

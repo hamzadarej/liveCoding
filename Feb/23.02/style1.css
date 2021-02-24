@@ -1,0 +1,68 @@
+nav ul li a {
+  color: lawngreen;
+  font-size: x-large;
+  text-shadow: black 1px;
+}
+nav ul li a :hover {
+  color: rgb(118, 128, 108);
+}
+nav ul li {
+  padding-right: 25px;
+  display: inline-block;
+}
+
+.chars {
+  color: chartreuse;
+
+  font-style: italic;
+  text-shadow: rgb(238, 238, 233);
+  font-weight: bold;
+}
+h1 {
+  text-align: center;
+  font-size: 55px;
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-color: darkkhaki;
+  background-image: url(successful-caktus.jpg);
+  background-attachment: fixed;
+  font-size: 28px;
+  margin: 5px;
+}
+p {
+  font-size: 35px;
+  text-shadow: green 2px;
+  border: black 1px solid;
+}
+form {
+  text-align: center;
+}
+.label-style {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  vertical-align: top;
+}
+
+section {
+  width: 50vw;
+}
+article {
+  width: 50%;
+}
+#main-text {
+  color: rgb(0, 255, 191);
+  letter-spacing: 2px;
+  font-family: "Akaya Kanadaka", cursive;
+  font-size: 3em;
+}
+
+nav ul li a:hover {
+  background-color: rgb(224, 162, 198);
+}
+nav ul li a:active {
+  background-color: green;
+}
