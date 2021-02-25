@@ -1,0 +1,90 @@
+html {
+  background-color: salmon;
+}
+div ~ span {
+  background-color: slateblue;
+} /*it will look for span and before it a div and it will change the span */
+p + span {
+  background-color: springgreen;
+} /* it will change the span after the closed div*/
+[id="name"] {
+  background-color: violet;
+}
+[type="submit"] {
+  border: none;
+  background-color: yellow;
+  border-radius: 15px;
+}
+[alt~="sun"] {
+  border: 3px solid black;
+}
+[type^="text"] {
+  color: snow;
+}
+[class$="box"] {
+  width: 14rem;
+}
+[class*="date"] {
+  background-color: thistle;
+  color: springgreen;
+  border-radius: 10px;
+}
+/*pseudo class*/
+/*sapecifies aspecial state for that element*/
+/*:hover*/
+table:hover {
+  background-color: teal;
+}
+/*:visited*/
+a:visited {
+  color: white;
+}
+/*:focus*/
+input[type="text"]:focus {
+  outline: none;
+  border: 2px solid red;
+  box-shadow: 3px 3px 3px 3px white;
+}
+a:hover {
+  color: yellow;
+}
+
+/*active*/
+a:active {
+  background-color: blue;
+}
+/*checked*/
+[type="checkbox"]:checked {
+  width: 3rem;
+}
+/*target*/
+/*:nth-child()&nth-last-child()*/
+tr:nth-child(2n) {
+  background-color: white;
+}
+tr:nth-last-child(1) {
+  background-color: black;
+} /*start from the last 1 it mean the last one*/
+td:nth-child(2) {
+  background-color: chartreuse;
+}
+tr:nth-child(2n+1):first-child {
+  background-color: red;
+}
+tr:nth-child(1) :nth-child(n+3){
+background-color: royalblue;
+}
+tr:nth-child(2n) :nth-child(n+4){
+    background-color: orange;
+    border: 2px solid white;
+}
+tr:nth-child(3n) :nth-child(n+5){
+
+    background-color: orchid;
+    border: 2px outset red;
+}
+
+/*pseudo element*/
+/*specific part of that element*/
+/*::after*/
+/*::before*/
