@@ -38,7 +38,7 @@ input:hover {
   filter: sepia();
 }
 .circle {
-  background-color: rgb(26, 26, 124);
+  background-color: blue;
   width: 4rem;
   height: 4rem;
   border-radius: 30px;
