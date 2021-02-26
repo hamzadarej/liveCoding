@@ -1,6 +1,1 @@
-it's about javascript course and practice:
-
-Number,String,boolean\
-functions,random,converting,Concatenation,Rounding ,Array.\
-math :(Min & max , random; floor ,ceil )\
-str(.trim, length , includes , split , toUppercase ,toLowercase )
+[git & github](https://github.com/hamzadarej/liveCoding/blob/master/git/15-12.md)
