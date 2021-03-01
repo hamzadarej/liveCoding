@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+/* pseudo elements VS  pseudo classes */
+
+/* pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). */
+/* more pseudo classes
+:valid
+:hover */
+
+/* pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s) */
+div[class="main-text"]::after {
+  content: "😃";
+}
+/* ::placeholder  */
+[type="text"]::placeholder {
+  color: aqua;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* ::before  Vs :before */
+/*   
+  :before css2 and ::before is css3
+*/
+
+/* ::first-letter (:first-letter) */
+.text::first-letter {
+  color: blueviolet;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* display:none vs opacity: 0 */
+.tree {
+  width: 20vw;
+  height: 20vw;
+  box-shadow: 5px 5px 5px green ;
+  opacity: 0,5;
+  filter: grayscale(50);
+}
+.tree:hover {
+  opacity: 1;
+  filter:grayscale(0);
+  width: 25vw;
+  height: 25vw;
+  transition: 4s ease-in-out;
+}
+/* vh & vw */
+.menu{
+  width: 100vw;
+  height: 15vh;
+  background-color: orangered;
+  opacity: 0.5;
+}
+.menu:hover{
+  opacity: 1;
+}
+ul li {
+  display:inline-block ;
+  margin-right:4vw ;
+  
+}
+
+/* visual content like img */
+/*  % , border-radius */
