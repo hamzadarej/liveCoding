@@ -52,12 +52,13 @@ div[class="main-text"]::after {
 /* vh & vw */
 .menu{
   width: 100vw;
-  height: 15vh;
-  background-color: orangered;
+  height: 10vh;
+  background-color: gray;
   opacity: 0.5;
 }
 .menu:hover{
   opacity: 1;
+  
 }
 ul li {
   display:inline-block ;
@@ -67,3 +68,12 @@ ul li {
 
 /* visual content like img */
 /*  % , border-radius */
+.last-img {
+  width: 50vw;
+  height: 50vh;
+}
+.last-img img {
+  width: 100%;
+  height: 50%;
+
+}
