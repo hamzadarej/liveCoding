@@ -1,5 +1,4 @@
 table {
-    background-color: white;
     margin: 3rem auto;
 }
 td {
@@ -7,8 +6,8 @@ td {
     background-color: white;
     width: 5rem;
     height: 5rem;
-    border-radius: 5px;
+    border-radius: 2px;
 }
-tr:nth-child(1) :nth-child(2n) ,tr:nth-child(2) :nth-child(2n+1),tr:nth-child(3) :nth-child(2n),tr:nth-child(4) :nth-child(2n+1),tr:nth-child(5) :nth-child(2n),tr:nth-child(6) :nth-child(2n+1),tr:nth-child(7) :nth-child(2n),tr:nth-child(8) :nth-child(2n+1){
+tr:nth-child(2n) :nth-child(2n+1),tr:nth-child(2n+1) :nth-child(2n){
     background-color: black;
 }
