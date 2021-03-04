@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  background-color: burlywood;
+  width: 500px;
+  height: 500px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: crimson;
+  order: 1;
+}
+.box-main {
+    width: 150px;
+   /* height: 150px;*/
+  background-color: darkblue;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 1;
+  
+}
+.baby {
+  width: 40px;
+  height: 40px;
+  background-color: snow;
+}
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
