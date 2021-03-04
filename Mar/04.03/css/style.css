@@ -5,17 +5,20 @@
   height: 500px;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .box {
   width: 150px;
-  height: 150px;
+  /*height: 150px;*/
   background-color: crimson;
-  order: 1;
+  order: -1;
+  margin: 1%;
+  flex-grow: 1;
 }
 .box-main {
     width: 150px;
-   /* height: 150px;*/
+   /*height: 150px;*/
   background-color: darkblue;
   align-self: flex-start;
   display: flex;
