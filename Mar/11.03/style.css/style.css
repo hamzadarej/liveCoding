@@ -10,6 +10,8 @@ body {
     flex-direction: column;
     font-family: 'Akaya Telivigala', cursive;
     width: 100vw;
+    height: 100vh;
+    
     
 }
 .nav {
@@ -19,6 +21,7 @@ body {
     align-items: center;
     border: 1px solid black;
     border-radius: 12px;
+    height: 5vh;
     
     
 }
@@ -40,17 +43,18 @@ body {
 }
 .main {
     background-color: tan;
-     height: 80vh;
+     height: 85vh;
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
      position: relative;
      overflow: hidden;
+     z-index: 1;
      
 }
 .design1 {
-    width: 60vw;
+    width: 70vw;
     height: 60vh;
     background-color: turquoise;
     position: absolute;
@@ -94,7 +98,7 @@ input:hover {
     width: 50vh;
     background-color: turquoise;
     position: absolute;
-    bottom: 4rem;
+    top: 4rem;
     right: -20rem;
     border-radius: 15px;
     display: flex;
@@ -108,16 +112,29 @@ input:hover {
     transition: 2s;
 
 }
+.design3 {
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    background-color: turquoise;
+    transform: rotate(50deg);
+    
+    z-index: -1;
+    top: 90px;
+    right: 5px;
+    
+}
 
 
 .foot {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     
-  height: 20vh;
+  height: 10vh;
   border: 1px solid;
+  
   
 }
 span {
