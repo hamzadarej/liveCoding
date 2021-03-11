@@ -1,6 +1,6 @@
 /*font style: font-family: 'Akaya Telivigala', cursive; */
 body {
-    background-color: gray;
+    background-color: teal;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -17,7 +17,21 @@ body {
     justify-content: space-evenly;
     align-items: center;
     border: 1px solid black;
+    border-radius: 12px;
     
+    
+}
+.nav ul {
+    border: 1px solid paleturquoise;
+    padding: 0px 10px;
+    border-radius: 10px;
+    
+}
+.nav ul a {
+    color: white;
+    font-size: large;
+    text-decoration: none;
+  
 }
 .main {
     background-color: tan;
@@ -26,5 +40,28 @@ body {
      flex-direction: column;
      align-items: center;
      justify-content: center;
+     position: relative;
+     overflow: hidden;
      
+}
+.design1 {
+    width: 80rem;
+    height: 40rem;
+    background-color: turquoise;
+    position: absolute;
+    border-radius: 20px;
+    top: -10rem;
+    left: -20rem;
+    
+    transform: rotate(-40deg);
+    
+
+}
+.foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:10vh;
+  
 }
