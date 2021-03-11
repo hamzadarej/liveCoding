@@ -90,12 +90,23 @@ input:hover {
     font-size: x-large;
 }
 .design2 {
-    height: 30vh;
-    width: 30vh;
+    height: 8vh;
+    width: 50vh;
     background-color: turquoise;
     position: absolute;
     bottom: 4rem;
-    right: -2rem;
+    right: -20rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly ;
+    flex-direction: row;
+    
+}
+.design2:hover {
+    right: 3rem;
+    transition: 2s;
+
 }
 
 
@@ -106,4 +117,10 @@ input:hover {
     justify-content: center;
     height:10vh;
   
+}
+span {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    text-shadow: wheat 2px 1px;
 }
