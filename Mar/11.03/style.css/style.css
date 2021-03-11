@@ -115,7 +115,9 @@ input:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:10vh;
+    
+  height: 20vh;
+  border: 1px solid;
   
 }
 span {
