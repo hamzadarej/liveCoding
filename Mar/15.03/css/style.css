@@ -2,7 +2,7 @@ html {
   font-size: 16px;
 }
 body {
-    background-color: cadetblue;
+  background-color: cadetblue;
 }
 main {
   display: grid;
@@ -13,9 +13,8 @@ main {
   gap: calc(2rem + 4%);
   grid-template-areas:
     "menu menu menu"
-    
-    " main-article main-article side-bar"
-    " sec-article sec-article side-bar"
+    "main-article main-article side-bar"
+    "sec-article sec-article side-bar"
     "footer footer footer";
 }
 div {
