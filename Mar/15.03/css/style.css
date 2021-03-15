@@ -1,0 +1,41 @@
+html {
+  font-size: 16px;
+}
+body {
+    background-color: cadetblue;
+}
+main {
+  display: grid;
+  border: 2px blueviolet dashed;
+  height: 100vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: calc(2rem + 4%);
+  grid-template-areas:
+    "menu menu menu"
+    
+    " main-article main-article side-bar"
+    " sec-article sec-article side-bar"
+    "footer footer footer";
+}
+div {
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu {
+  grid-area: menu;
+}
+.side-bar {
+  grid-area: side-bar;
+}
+.main-article {
+  grid-area: main-article;
+}
+.sec-article {
+  grid-area: sec-article;
+}
+.footer {
+  grid-area: footer;
+}
