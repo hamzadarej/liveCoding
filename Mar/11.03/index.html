@@ -40,29 +40,32 @@
             <input type="button" value="B1" />
             <input type="button" value="B2" />
           </div>
-         </div>
-         <div class="design2">
+        </div>
+        <div class="design2">
           <span>Need Help ?</span>
           <input type="text" placeholder="text us" />
           <input type="button" value="sent" />
-         </div>
-         <div class="design3"></div>
+        </div>
+        <div class="design3"></div>
 
         <input type="button" value="Start" />
       </section>
       <section class="foot">
-        <h3>this web page made By ME</h3>
-        <h4>All copyrights reserved ® <span class="year"></span>/<span
-            class="month"
-          ></span>
-        </h4>
-        <script>
-          let year = new Date().getFullYear();
-          document.querySelector(".year").innerHTML = year;
-          let month = new Date().getMonth();
-          document.querySelector(".month").innerHTML = month + 1;
-        </script>
+        <div><h3>this web page made By ME</h3></div>
+        <div>
+          <h4>
+            All copyrights reserved ® <span class="year"></span>/<span
+              class="month"
+            ></span>
+          </h4>
+        </div>
       </section>
     </div>
+    <script>
+      let year = new Date().getFullYear();
+      document.querySelector(".year").innerHTML = year;
+      let month = new Date().getMonth();
+      document.querySelector(".month").innerHTML = month + 1;
+    </script>
   </body>
 </html>

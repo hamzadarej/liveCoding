@@ -1,145 +1,136 @@
 /*font style: font-family: 'Akaya Telivigala', cursive; */
 body {
-    background-color: teal;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  background-color: teal;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 .display {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Akaya Telivigala', cursive;
-    width: 100vw;
-    height: 100vh;
-    
-    
+  display: flex;
+  flex-direction: column;
+  font-family: "Akaya Telivigala", cursive;
+  width: 100vw;
+  height: 100vh;
 }
 .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 12px;
-    height: 5vh;
-    
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 12px;
+  height: 5vh;
 }
 .nav ul {
-    border: 1px solid paleturquoise;
-    padding: 0px 10px;
-    border-radius: 10px;
-    
+  border: 1px solid paleturquoise;
+  padding: 0px 10px;
+  border-radius: 10px;
 }
 .nav ul a {
-    color: white;
-    font-size: larger;
-    text-decoration: none;
-  
+  color: white;
+  font-size: larger;
+  text-decoration: none;
 }
 .nav ul a:hover {
-
-    color: black;
+  color: black;
 }
 .main {
-    background-color: tan;
-     height: 85vh;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     position: relative;
-     overflow: hidden;
-     z-index: 1;
-     
+  background-color: tan;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 .design1 {
-    width: 70vw;
-    height: 60vh;
-    background-color: turquoise;
-    position: absolute;
-    border-radius: 20px;
-    top: -10rem;
-    left: -20rem;
-    transform: rotate(-40deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    
+  width: 70vw;
+  height: 60vh;
+  background-color: turquoise;
+  position: absolute;
+  border-radius: 20px;
+  top: -10rem;
+  left: -22rem;
+  transform: rotate(-40deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 .level {
-    transform: rotate(40deg);
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    font-size: x-large;
-    align-items: center;
-    height: 25vh;
-    width: 10vw;
+  transform: rotate(40deg);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  font-size: x-large;
+  align-items: center;
+  height: 25vh;
+  width: 10vw;
 }
 input {
-    text-align: center;
-    color:wheat;
-    font-size: large;
-    font-weight: bold;
-    width: 5vw;
-    background-color: cadetblue;
-    cursor: pointer;
-    box-shadow: 2px 2px wheat;
-    border-radius: 7px;
+  text-align: center;
+  color: wheat;
+  font-size: large;
+  font-weight: bold;
+  width: 5vw;
+  background-color: cadetblue;
+  cursor: pointer;
+  box-shadow: 2px 2px wheat;
+  border-radius: 7px;
 }
 input:hover {
-    color: white;
-    font-size: x-large;
+  color: white;
+  font-size: x-large;
 }
 .design2 {
-    height: 8vh;
-    width: 50vh;
-    background-color: turquoise;
-    position: absolute;
-    top: 4rem;
-    right: -20rem;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly ;
-    flex-direction: row;
-    
+  height: 8vh;
+  width: 50vh;
+  background-color: turquoise;
+  position: absolute;
+  top: 4rem;
+  right: -20rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
 .design2:hover {
-    right: 3rem;
-    transition: 2s;
-
+  right: 3rem;
+  transition: 2s;
 }
 .design3 {
-    width: 100vw;
-    height: 20vh;
-    position: absolute;
-    background-color: turquoise;
-    transform: rotate(50deg);
-    
-    z-index: -1;
-    top: 90px;
-    right: 5px;
-    
-}
+  width: 100vw;
+  height: 20vh;
+  position: absolute;
+  background-color: turquoise;
+  transform: rotate(50deg);
 
+  z-index: -1;
+  top: 90px;
+  left: 20px;
+}
 
 .foot {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    
-  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: fit-content;
   border: 1px solid;
-  
-  
 }
 span {
-    text-align: center;
-    font-size: larger;
-    font-weight: bold;
-    text-shadow: wheat 2px 1px;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  text-shadow: wheat 2px 1px;
 }
+h3 ,h4{
+    height: 2vh;
+    border: 1px solid;
+    padding: 5px;
+    }
+
