@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  width: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+}
+section {
+  display: flex;
+  height: 20rem;
+  width: 30%;
+  border: 1px solid red;
+}
