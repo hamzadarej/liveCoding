@@ -1,7 +1,7 @@
 {
   "name": "14.04",
   "version": "1.0.0",
-  "description": "SASS project",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "run-p watch watch:styles",
@@ -15,7 +15,7 @@
     "copy": "mkdir dist && rsync -avr --exclude=\"/scss\" src/ dist",
     "publish": "gh-pages -d dist"
   },
-  "author": "Hamza Darej",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "gh-pages": "^3.1.0",
