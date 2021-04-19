@@ -1,36 +1,35 @@
+@keyframes scale {
+  0% {
+    transform: scaleX(0);
+  }
+  0% {
+    transform: scaleX(50%);
+  }
+  0% {
+    transform: scaleX(100%);
+  }
+}
 .head {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #adad51;
+  text-align: center;
+  background-color: burlywood;
   width: 20rem;
   height: 20rem;
-  animation-duration: 4s;
-  animation-name: move;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  position: absolute;
 }
 .head div {
   width: 5rem;
   height: 5rem;
-  background-color: cadetblue;
-}
-@keyframes move {
-  from {
-    right: 20%;
-    top: 5rem;
-    opacity: 0.6;
-    background-color: yellow;
-  }
-  to {
-    top: 40rem;
-    right: 70%;
-    opacity: 1;
-    background-color: orange;
-  }
+  background-color: coral;
+  margin: 2px;
+  color: white;
+  border-radius: 50%;
+  animation: scale 3s alternate infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

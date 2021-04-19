@@ -1,12 +1,18 @@
 .head {
     @include center-it;
-    background-color: rgb(173, 173, 81);
+    background-color: burlywood;
     width: 20rem;
     height: 20rem;
     div {
         width: 5rem;
         height: 5rem;
-        background-color: cadetblue;
+        background-color: coral;
+        margin: 2px;
+        color: white;
+        
+        border-radius: 50%;
+        @include move-it;
+        @include center-it;
     }
-    @include move-it;
+    
 }
