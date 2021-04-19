@@ -5,6 +5,29 @@
  justify-content: center;
  align-items: center;
 }
-@mixin anima {
+@mixin move-it {
+    animation-duration:4s ;
+    
+    animation-name:move ;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    position: absolute;
+    @keyframes move {
+        from {
+            right: 20%;
+            top:5rem;
+            opacity: 0.6;
+            background-color: yellow;
+        }
+        to{
+            top: 40rem;
+            right: 70%;
+            opacity: 1;
+            background-color: orange;
+        }
+        
+    }
     
 }
