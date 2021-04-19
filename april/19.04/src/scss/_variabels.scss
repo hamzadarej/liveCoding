@@ -1,0 +1,9 @@
+
+.text-s {
+    @include font-size(s);
+}
+.text-m {
+    @include font-size(m);
+}.text-l {
+    @include font-size(l);
+}

@@ -34,3 +34,20 @@
     transform: scaleY(100%);
   }
 }
+//map 
+$font-size:(
+  xs:10px,
+  s:13px,
+  m:15px,
+  l:18px,
+);
+@mixin font-size($size) {
+  @if map map-has-key($font-size, $size){
+font-size:map-get($font-size,$size);
+}@else {
+  @error "#{$size} this is not defined Use #{font-size}";
+}
+  }
+
+  
+
