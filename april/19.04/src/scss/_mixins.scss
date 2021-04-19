@@ -4,7 +4,6 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  
 }
 
 @mixin move-it {
@@ -13,30 +12,25 @@
 @keyframes scale {
   0% {
     transform: scaleX(0);
-    
   }
   0% {
     transform: scaleX(50%);
-    
   }
   0% {
     transform: scaleX(100%);
-    
   }
 }
 @mixin loading {
-    animation: scale-it 3s alternate infinite;
+  animation: scale-it 5s alternate infinite;
+}
+@keyframes scale-it {
+  0% {
+    transform: scaleY(0);
   }
-  @keyframes scale-it {
-    0% {
-      transform: scaleY(0);
-      
-    }
-    0% {
-      transform: scaleY(50%);
-      
-    }
-    0% {
-      transform: scaleY(100%);
-      
-    }}
+  0% {
+    transform: scaleY(50%);
+  }
+  0% {
+    transform: scaleY(100%);
+  }
+}
