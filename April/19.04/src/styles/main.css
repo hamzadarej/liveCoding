@@ -1,17 +1,15 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "/src/scss/mixins"
- *   |         ^^^^^^^^^^^^^^^^^^
- *   '
- *   src/scss/main.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"/src/scss/mixins\"\a   \2502          ^^^^^^^^^^^^^^^^^^\a   \2575 \a   src/scss/main.scss 1:9  root stylesheet";
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #adad51;
+  width: 20rem;
+  height: 20rem;
 }
+.head div {
+  width: 5rem;
+  height: 5rem;
+  background-color: cadetblue;
+}
+
+/*# sourceMappingURL=main.css.map */

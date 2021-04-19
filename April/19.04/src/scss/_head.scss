@@ -1,4 +1,11 @@
 .head {
     @include center-it;
-    background-color: beige;
+    background-color: rgb(173, 173, 81);
+    width: 20rem;
+    height: 20rem;
+    div {
+        width: 5rem;
+        height: 5rem;
+        background-color: cadetblue;
+    }
 }
