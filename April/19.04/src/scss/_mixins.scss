@@ -24,3 +24,19 @@
     
   }
 }
+@mixin loading {
+    animation: scale-it 3s alternate infinite;
+  }
+  @keyframes scale-it {
+    0% {
+      transform: scaleY(0);
+      
+    }
+    0% {
+      transform: scaleY(50%);
+      
+    }
+    0% {
+      transform: scaleY(100%);
+      
+    }}

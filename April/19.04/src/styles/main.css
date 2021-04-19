@@ -9,6 +9,17 @@
     transform: scaleX(100%);
   }
 }
+@keyframes scale-it {
+  0% {
+    transform: scaleY(0);
+  }
+  0% {
+    transform: scaleY(50%);
+  }
+  0% {
+    transform: scaleY(100%);
+  }
+}
 body {
   display: flex;
   justify-content: space-around;
@@ -24,6 +35,8 @@ body {
   background-color: burlywood;
   width: 30rem;
   height: 20rem;
+  animation: scale-it 3s alternate infinite;
+  border-radius: 30%;
 }
 .head div {
   width: 5rem;
@@ -31,6 +44,7 @@ body {
   background-color: coral;
   margin: 2px;
   color: white;
+  box-shadow: white 1px 1px 1px 1px;
   border-radius: 50%;
   animation: scale 3s alternate infinite;
   display: flex;
