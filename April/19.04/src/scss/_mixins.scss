@@ -1,25 +1,26 @@
 // center vertically and horizontally
 @mixin center-it {
-    
- display: flex;
- justify-content: center;
- align-items: center;
- text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  
 }
 
 @mixin move-it {
-   
-    animation: scale 3s alternate infinite;
-    
+  animation: scale 3s alternate infinite;
 }
 @keyframes scale {
-    0% {
-        transform: scaleX(0);
-    }
-    0% {
-        transform: scaleX(50%);
-    }
-    0% {
-        transform: scaleX(100%);
-    }
+  0% {
+    transform: scaleX(0);
+    
+  }
+  0% {
+    transform: scaleX(50%);
+    
+  }
+  0% {
+    transform: scaleX(100%);
+    
+  }
 }

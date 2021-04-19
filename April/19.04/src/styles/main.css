@@ -9,13 +9,20 @@
     transform: scaleX(100%);
   }
 }
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
 .head {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   background-color: burlywood;
-  width: 20rem;
+  width: 30rem;
   height: 20rem;
 }
 .head div {
@@ -27,7 +34,7 @@
   border-radius: 50%;
   animation: scale 3s alternate infinite;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
 }
