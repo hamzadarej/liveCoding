@@ -1,0 +1,51 @@
+$items-count:30; 
+@keyframes move {
+    0% {
+        transform: scaleY(0.8);
+    }
+    50% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(1.4);
+    }
+}
+@mixin  add-move-animation ($duration) {
+    animation-name: move;
+    animation-duration: $duration;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    
+}
+body {
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+}
+.items-container {
+    display: grid;
+    grid-template-columns: repeat($items-count,1fr);
+    grid-template-rows: 1fr;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    
+}
+.item {
+    position: absolute;
+}
+
+@for $i from 1 through $items-count {
+    .item:nth-child(#{$i}){
+        background:linear-gradient(to left bottom ,lighten (green ,random(40)),
+        rgba(darken(green,random(10)), 1));
+
+        height: random(15)+5+vh;
+        width: random(15)+5+vw;
+        border-radius:((random(30)+px)) 0 ((random(30)+px)) 0 ((random(30)+px))  ;
+        transform: scaleX(1);
+
+
+    }
+    }
