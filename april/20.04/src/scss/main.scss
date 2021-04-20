@@ -32,20 +32,30 @@ body {
     position: relative;
     
 }
-.item {
-    position: absolute;
-}
+
 
 @for $i from 1 through $items-count {
     .item:nth-child(#{$i}){
-        background:linear-gradient(to left bottom ,lighten (green ,random(40)),
+        background:linear-gradient(to bottom left ,lighten (green ,random(40)),
         rgba(darken(green,random(10)), 1));
 
-        height: random(15)+5+vh;
-        width: random(15)+5+vw;
+        height: random(35)+5+vh;
+        width: random(2)+5+vw;
         border-radius:((random(30)+px)) 0 ((random(30)+px)) 0 ((random(30)+px))  ;
         transform: scaleX(1);
-
-
+        @if (($i % 2) != 0) {
+            border-radius: ((random(40) + 10 + px)) 0 ((random(20) + 10 + px)) 0;
+            background: linear-gradient(
+              to top right,
+              lighten(gray, random(40)),
+              rgba(darken(gray, random(10)), 1)
+            );
+          }
+      
+        @include add-move-animation(random(5) + 1 + s);
     }
     }
+    .item:nth-child(odd) {
+        align-self: end;
+        transform-origin: 0 100%;
+      }
