@@ -36,19 +36,28 @@ body {
 
 @for $i from 1 through $items-count {
     .item:nth-child(#{$i}){
-        background:linear-gradient(to bottom left ,lighten (green ,random(40)),
-        rgba(darken(green,random(10)), 1));
+        background: linear-gradient(
+            to top right,
+            
+            lighten(red, random(40)),
+            rgba(darken(gray, random(10)), 1)
+            
+          );
+       border: 1px white solid;
 
-        height: random(35)+5+vh;
-        width: random(2)+5+vw;
-        border-radius:((random(30)+px)) 0 ((random(30)+px)) 0 ((random(30)+px))  ;
-        transform: scaleX(1);
+        height: random(50)+10+vh;
+        width: random(2)+1+vw;
+        border-radius: 0 0((random(20)+px)) ((random(30)+px))  ;
+        transform:0 0;
         @if (($i % 2) != 0) {
             border-radius: ((random(40) + 10 + px)) 0 ((random(20) + 10 + px)) 0;
+            height: random(60)+10+vh;
             background: linear-gradient(
               to top right,
-              lighten(gray, random(40)),
+              
+              lighten(green, random(40)),
               rgba(darken(gray, random(10)), 1)
+              
             );
           }
       
@@ -59,3 +68,4 @@ body {
         align-self: end;
         transform-origin: 0 100%;
       }
+     
