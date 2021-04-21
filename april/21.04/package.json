@@ -1,6 +1,7 @@
 {
-  "name": "april",
+  "name": "21.04",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "run-p watch watch:styles",
@@ -21,7 +22,5 @@
     "live-server": "^1.2.1",
     "npm-run-all": "^4.1.5",
     "sass": "^1.32.11"
-  },
-  "dependencies": {},
-  "description": ""
+  }
 }
