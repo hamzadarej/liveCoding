@@ -7,5 +7,8 @@ function rest(){
     }
 }
 function equal(){
-   const exp= document.form.textView.value
+   const exp= document.form.textView.value;
+   if(exp){
+    document.form.textView.value=eval(exp)
+   }
 }
