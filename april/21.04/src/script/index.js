@@ -20,7 +20,7 @@ function multiply() {
     for (let i = 1; i <= 10; i++) {
 
 
-      results += `${i} * ${userNum} = ${i * userNum} <br>`;
+      results += `${i} * ${userNum} = ${i * user} <br>`;
     }
     document.querySelector(".result1").innerHTML = results;
   }
