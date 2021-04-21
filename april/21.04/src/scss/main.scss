@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 8px;
     
    
 }
@@ -37,14 +37,28 @@ body {
     align-items: flex-end;
     justify-content: flex-end;
     padding: 5px;
+    
 }
 .buttons {
     display: grid;
     grid-template-columns: repeat(4,50px);
     grid-template-rows: repeat(5,50px);
-    grid-gap: 5px;
+    grid-gap: 3px;
+    
+    
     
 }
+
+.buttons button {
+    background-color: rgb(225, 244, 250);
+    border: snow;
+    color: black;
+    font-weight: bold;
+}
+.buttons button:hover {
+    background-color: white;border-radius: 15%;
+}
+
 .equalB {
-    width: 105px;
+    width: 103px;
 }
