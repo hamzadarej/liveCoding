@@ -4,5 +4,5 @@ function change(){
     "<span>hi im from js </span>";
 }
 
-
+const buttons = document.querySelectorAll(.boutn)
  
