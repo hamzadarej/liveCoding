@@ -1,13 +1,14 @@
 $items-count:30; 
 @keyframes move {
     0% {
-        transform: scaleY(0.8);
+        transform: scaleY(0.5);
+        
     }
     50% {
-        transform: scaleY(1);
+        transform: scaleXY(1);
     }
     100% {
-        transform: scaleY(1.4);
+        transform: scaleY(1.6);
     }
 }
 @mixin  add-move-animation ($duration) {
@@ -29,7 +30,8 @@ body {
     grid-template-rows: 1fr;
     width: 100vw;
     height: 100vh;
-    position: relative;
+    
+    
     
 }
 
@@ -39,19 +41,22 @@ body {
         background: linear-gradient(
             to top right,
             
-            lighten(red, random(40)),
-            rgba(darken(gray, random(10)), 1)
+            lighten(orange, random(40)),
+            rgba(darken(gray, random(12)), 1)
             
           );
-       border: 1px white solid;
+          margin: 0;
+       
 
-        height: random(50)+10+vh;
+        height: random(40)+10+vh;
         width: random(2)+1+vw;
         border-radius: 0 0((random(20)+px)) ((random(30)+px))  ;
         transform:0 0;
         @if (($i % 2) != 0) {
             border-radius: ((random(40) + 10 + px)) 0 ((random(20) + 10 + px)) 0;
             height: random(60)+10+vh;
+            
+            
             background: linear-gradient(
               to top right,
               
@@ -61,11 +66,12 @@ body {
             );
           }
       
-        @include add-move-animation(random(5) + 1 + s);
+        @include add-move-animation(random(4) + 1 + s);
     }
+   
     }
     .item:nth-child(odd) {
         align-self: end;
-        transform-origin: 0 100%;
+        transform-origin: 10% 100%;
       }
      
