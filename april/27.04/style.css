@@ -26,11 +26,14 @@ body {
     width: 40%;
     height: 50%;
     background-color: rgb(243, 238, 238);
-    opacity: 0.5;
+    opacity: 0.7;
     border-radius: 15px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
     
 }
-.places p{
-    opacity: 1;
+.places li{
+    color:black;
     
 }
