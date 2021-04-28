@@ -7,9 +7,18 @@ const commentThree =document.querySelector("p").nextSibling;
 console.log(commentThree.nextSibling);
 
 const commentFour = document.querySelector("span").previousSibling;
-console.log(commentFour.previousSibling)
+console.log(commentFour.previousSibling);
 
 const commentFive = document.querySelector("script").previousSibling;
-console.log(commentFive.previousSibling)
+console.log(commentFive.previousSibling);
+/*easier method */
+const comments=document.querySelector("body");
+const commentsArr=Array.from(comments.childNodes);
+
+commentsArr.forEach(comment => {
+    if (comment.nodeType==("8"))
+    console.log(comment) 
+    
+});
 
 
