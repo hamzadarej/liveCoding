@@ -14,3 +14,7 @@ body {
 h2 {
     text-align: center;
 }
+main {
+    text-align: center;
+    padding: 10px;
+}
