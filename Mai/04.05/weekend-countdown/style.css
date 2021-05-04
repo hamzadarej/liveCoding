@@ -18,3 +18,8 @@ main {
     text-align: center;
     padding: 10px;
 }
+.result {
+    padding-top: 15px;
+    line-height: 30px;
+    font-size: large;
+}
