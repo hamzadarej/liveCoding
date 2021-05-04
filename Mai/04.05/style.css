@@ -1,0 +1,15 @@
+.done {
+  background-color: lightgreen;
+  width: 20rem;
+  position: relative;
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+}
+.close {
+  position: absolute;
+  right:2em ;
+}
+.close:hover {
+    color: red;
+}
