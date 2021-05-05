@@ -10,7 +10,8 @@ container.addEventListener("click",(e)=>{
     if(e.target.className=="order"){
         let father=e.target.parentElement;
 
-        orderList+=father
+        father.style.color="green";
+        
     };
 
 })
