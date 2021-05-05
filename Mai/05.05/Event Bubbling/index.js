@@ -5,6 +5,9 @@ container.addEventListener("click",(e)=>{
         let list=e.target.parentElement;
         container.removeChild(list);
     };
-    
+    if(e.target.className=="order"){
+        let list=e.target.parentElement;
+        container.removeChild(list);
+    };
 
 })
