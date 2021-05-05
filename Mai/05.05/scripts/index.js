@@ -18,4 +18,13 @@ parsedData.forEach((obj) => {
     section.innerHTML +=personInfo
     
 });
-
+/*target =where the event and when happenend */
+const hide =document.querySelector("#hide");
+const text =document.querySelector("p");
+hide.addEventListener("click",()=>{
+    if (hide.checked){
+        text.style.display="none";
+    }else {
+        text.style.display ="block";
+    }
+})
