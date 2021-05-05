@@ -4,8 +4,13 @@ const obj = [
     { name: "aymen", age: 29, add: "München" },
   ];
   // step one making obj into JSON
-  
+  const obj1 ={};
   let data =JSON.stringify(obj);
+  let data1 =JSON.stringify(obj1);
   
-  export default data;
+  export default data;/*to export just one Object*/
+  /*to export more than one*/
+  /*export {
+      data ,data1
+  }*/
   
