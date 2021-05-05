@@ -6,12 +6,13 @@ console.log(parsedData);
 const section=document.querySelector("#list");
 
 parsedData.forEach((obj) => {
-    let {name,age,add}=obj;
+    let {name,age,add,img}=obj;
     let personInfo =`
     <div>
     <h1>${name}</h1>
     <li>${age}</li>
-    <li>${add}</li><br>
+    <li>${add}</li>
+    <img src=${img}><br>
     
     </div>`;
     section.innerHTML +=personInfo
