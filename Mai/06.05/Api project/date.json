@@ -1,29 +1,29 @@
 [
   {
     "id": 1,
-    "name": "Hadi",
-    "age": 31,
+    "name": "Mohammed",
+    "age": 28,
     "city": "Berlin",
     "photo": "🤓"
   },
   {
     "id": 2,
-    "name": "Olga",
+    "name": "Sirine",
     "age": 43,
     "city": "Paris",
     "photo": "👩🏼‍⚕️"
   },
   {
     "id": 3,
-    "name": "Nancy",
+    "name": "chaima",
     "age": 19,
-    "city": "LA",
+    "city": "Spain",
     "photo": "👧🏻"
   },
   {
     "id": 4,
-    "name": "Zain",
-    "age": 22,
+    "name": "Nizar",
+    "age": 32,
     "city": "Moscow",
     "photo": "😎"
   }

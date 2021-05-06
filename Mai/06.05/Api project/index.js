@@ -14,7 +14,7 @@ const fetchJson=()=>{
          </div>`;
             
         });
-        document.querySelector(".result").innerHTML=json;
+        document.querySelector(".result").innerHTML=userList;
 
     })
     .catch((err)=>console.log(err))
