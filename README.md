@@ -1,7 +1,7 @@
 # liveCoding
 ---
 ## Important Basics
->### 1. *Git and Github {101}(https://github.com/hamzadarej/liveCoding/blob/master/Dec/15-12.md)*
+>### 1. *Git and Github (https://github.com/hamzadarej/liveCoding/blob/master/Dec/15-12.md){101}*
 >### 2. *Upstream and more*
 ---
 ## Class Topics
