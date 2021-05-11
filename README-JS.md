@@ -1,6 +1,6 @@
 # Live-coding Javascript
 
-[04/01/2021](Jan/04.01/index.js)
+[04/01/2021](Jan/04.01/jan.js)
 Introduction Javascript :
 Expressions:
 
