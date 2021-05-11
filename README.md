@@ -10,8 +10,8 @@
 ## [Javascript]()
 >### 2. *Go to the following link to find the HTML topics with the dates:*
 
-[## HTML & CSS]()
+## [HTML & CSS]()
 >### 3.*Go to the following link to find the DOM topics with the dates:* 
 
-[## DOM]()
+## [DOM]()
 ---
