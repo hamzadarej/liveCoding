@@ -74,3 +74,27 @@ const userStatus = new Promise((resolve, reject) => {
   }
   
   startSomething();
+
+  /*callbackfuncion & promise */
+
+  async function fetchUser(){
+    let response =await fetch("https://jsonplaceholder.typicode.com/comments");
+    let json =await response.json();
+    console.log(json)
+    let userComment="<h1>comments</h1>";
+    json.forEach((obj) => {
+      let{id, name, email, body}=obj;
+      userComment+= `
+      <div class="box" id=${id}>
+      <h3>${name}</h3>
+      <h5>${email}</h5>
+      <p>${body}</p>
+      </div>`;
+      
+    });
+    document.querySelector(".result").innerHTML = userComment;
+
+  }
+  fetchUser()
+  
+  
