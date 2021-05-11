@@ -26,14 +26,11 @@
 - `document.querySelectorAll(<selector string>)`
 - Project: Dom-querying
 
-[26/04/2020](april/26.04)
-
+[27/04/2020](april/27.04)
 - `document.write()` and script injection
 - Creating Elements: `document.createElement(<tag name>)`
 - Adding elements to the page: `Element.appendChild(<Element object>)`"
 - ToDo app with DOM
-
-[27/04/2020](april/27.04)
 
 - DOM Querying: Getting elements from `document`
 - Selecting elements with `document.getElementById(<id string>)`
