@@ -29,7 +29,7 @@ Expressions:
   String:
 - Getting the length of a string: length”
 
-[05/01/2021](Jan/05.01/index.js) - Review
+[05/01/2021](Jan/05.01/Index.js) - Review
 
 Data types :
 String:
@@ -131,7 +131,7 @@ Numerical Repetition:
 - Removing items: `Array.prototype.pop()`, `Array.prototype.shift()`
 - Manipulating arrays: `Array.prototype.reverse()`
 
-[20/01/2021](Jan/20.01/index.js)
+[20/01/2021](Jan/20.01/index1.js)
 More Array methods
 
 Function Scope:
