@@ -7,7 +7,7 @@
 ## Class Topics
 >### 1. *Go to the following link to find the Javascript topics with the dates:*
 
-## [Javascript]()
+## [Javascript](https://github.com/hamzadarej/liveCoding/blob/master/README-JS.md)
 >### 2. *Go to the following link to find the HTML topics with the dates:*
 
 ## [HTML & CSS](https://github.com/hamzadarej/liveCoding/blob/master/README-HTML%26CSS.md)
