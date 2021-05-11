@@ -2,7 +2,7 @@
 
 ## HTML & CSS
 
-[22/02/2020](feb/22-02)
+[22/02/2020](Feb/22.02)
 
 Introduction to HTML
 
@@ -19,7 +19,7 @@ Introduction to HTML
 - Formatting Elements `<strong>`, `<em>`, `<sup>`, `<sub>`, `<b>`, `<i>`, `<mark>`
 - Form (action, method="POST"), input
 
-[23/02/2020](feb/23-02)
+[23/02/2020](Feb/23.02)
 
 
 - HTML + CSS
@@ -37,7 +37,7 @@ Introduction to HTML
 - Form (method="GET")
 - iframe
 
-[24/02/2020](feb/24-02)
+[24/02/2020](Feb/24.02)
 
 
 - The image tag: `<img src=""[URL]"">`
@@ -59,7 +59,7 @@ Introduction to HTML
 - `<img>` vs. `background-image`, `background-size`, `background-repeat`, `background-position`
 - Putting it all together with the `background` shorthand
 
-[25/02/2020](feb/25-02)
+[25/02/2020](Feb/25.02)
 
 
 - `:hover`, `:active`, `:visited`
@@ -82,7 +82,7 @@ Introduction to HTML
 - Hiding things with css `visibility` (vs. `display: none;`)
 - Making navbars accessible: The `<nav>` element
 
-[01/03/2020](mar/01-03)
+[01/03/2020](Mar/01.03)
 Review from last week: HTML and CSS
 
 - element selectors, combining multiple selectors
@@ -97,7 +97,7 @@ Review from last week: HTML and CSS
 - `visibility` (vs. `display: none;`)
 - Periodic Table
 
-[02/03/2020](mar/02-03)
+[02/03/2020](Mar/02.03)
 Review of past lessons (table, input,
 
 - `:nth-child() { ... }`
@@ -111,7 +111,7 @@ Review of past lessons (table, input,
 - Rounding images: `border-radius: [BORDER-SIZE]`, `%`
 - Chess board
 
-[03/03/2020](mar/03-03)
+[03/03/2020](Mar/03.03)
 Review of past lessons
 
 - @font-face
@@ -127,7 +127,7 @@ Review of past lessons
 - fontawesome
 - `<i class=""fas [icon-class]""></i>`
 
-[04/03/2020](mar/04-03)
+[04/03/2020](Mar/04.03)
 
 
 - Making navbars accessible: The `<nav>` element
@@ -136,17 +136,17 @@ Review of past lessons
 - Direction and wrapping: css `flex-direction` and `flex-wrap`
 - Small shorthand: css `flex-flow`
 
-[09/03/2020](mar/09-03)
+[09/03/2020](Mar/09.03)
 
 - css `position` and `static`, `relative`, `absolute`
 - Using our `@media` queries for layout
 
-[11/03/2020](mar/11-03)
+[11/03/2020](Mar/11.03)
 
 - Review from previous days
 - Nice form elements
 
-[15/03/2020](mar/15-03)
+[15/03/2020](Mar/15.03)
 CSS Grid:
 
 - `.container { display: grid }`
@@ -158,7 +158,7 @@ CSS Grid:
 - Grid exercise
 - Mock up sign in page
 
-[16/03/2020](mar/16-03)
+[16/03/2020](Mar/16.03)
 
 - connecting Javascript with HTML and CSS.
 - The `<script>` tag
@@ -166,7 +166,7 @@ CSS Grid:
 - Making a menu with fancy effects
 - Exercise: using `onclick` effect on the menu for the mobile app.
 
-[17/03/2020](mar/17-03)
+[17/03/2020](Mar/17.03)
 
 - Animations
 - `@keyframes [name] { ... }`
@@ -174,12 +174,12 @@ CSS Grid:
 - `from`, `to` and `%` directives
 - `animation-iteration-count`, `animation-direction`
 
-[18/03/2020](mar/00-03)
+[18/03/2020](Mar/00.03)
 
 - Review from previous days
 - Nice nav elements
 
-[22/03/2020](mar/22-03)
+[22/03/2020](Mar/22.03)
 
 - small example of connecting Javascript with HTML and CSS.
 
@@ -187,11 +187,11 @@ CSS Grid:
 - Wrapping long words: css `overflow-wrap`
 
 
-[23/03/2020](mar/23-03)
+[23/03/2020](Mar/23-03)
 
 - Normalize.css 
 
-[12/04/2020](apr/12-04)
+[12/04/2020](april/12.04)
 
 - Bootstrap
 - Adding bootstrap to our project (with CDNs):
@@ -200,13 +200,13 @@ CSS Grid:
 - Navbar with bootstrap
 - Exercise: Build your own (random stuff with bootstrap)
 
-[13/04/2020](apr/13-04)
+[13/04/2020](april/13.04)
 
 - Table with Bootstrap
 - Form with Bootstrap
 - Exercise: porfolio with Bootstrap
 
-[14/04/2020](apr/14-04)
+[14/04/2020](april/14.04)
 
 - Project Template HTML CSS boilerplate with built-in sass support
 - Installing dependencies: `npm install`
@@ -215,7 +215,7 @@ CSS Grid:
 - Publishing online: `npm run deploy`
 - Project structure: `scss` and `styles` folders
 
-[15/04/2020](apr/15-04)
+[15/04/2020](april/15.04)
 
 - Installing sass: `npm install -g sass`
 - Creating input: `.scss` vs. `.sass`
@@ -228,7 +228,7 @@ CSS Grid:
 - Sass maps
 - Project: color guide in Sass
 
-[19/04/2020](apr/19-04)
+[19/04/2020](april/19.04)
 
 - Review from previous days (Sass)
 - Defining mixins: `@mixin [name](){ ... }`
