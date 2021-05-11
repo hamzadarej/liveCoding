@@ -80,8 +80,13 @@ async function fetchUser() {
   let json = await response.json();
   return json
 }
-fetchUser()
-.then(json=>{let userComment = "<h1>comments</h1>";
+
+
+async function fetchMain(){
+  try{
+  let json = await fetchUser();
+
+  let userComment = "<h1>comments</h1>";
   json.forEach((obj) => {
     let { id, name, email, body } = obj;
     userComment += `
@@ -90,10 +95,16 @@ fetchUser()
     <h5>${email}</h5>
     <p>${body}</p>
     </div>`;
+    document.querySelector(".result").innerHTML = userComment;
   });
-  document.querySelector(".result").innerHTML = userComment;})
-.catch(err=>{
+   
+}
+  catch(err){
   console.error(err)
-});
+}
+}
+
+
+fetchMain()
 
 
