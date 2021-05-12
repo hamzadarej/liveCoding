@@ -25,7 +25,7 @@ checkPromise
       }
       );
   }
-  let ms =3500;
+  let ms =1500;
   function doSomething(){
       let text = document.querySelector(".text");
       text.innerHTML =`it took me ${ms}ms to be done.`

@@ -41,7 +41,8 @@ function fetchApiCommentS() {
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
-      let userInfo = "<h1>Comments API response </h1>";
+      var userInfo = "";
+      let userHeader = "<h1>Comments API response </h1>";
       data.forEach((comment) => {
         let { id, name, email, body } = comment;
         userInfo += `
@@ -53,6 +54,29 @@ function fetchApiCommentS() {
           `;
       });
       document.querySelector(".result").innerHTML = userInfo;
+
+      document.querySelector(".header").innerHTML = userHeader;
+    })
+    .catch((err) => console.log(err));
+}
+function fetchApiTodos() {
+  fetch("https://jsonplaceholder.typicode.com/todos")
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      let userTask = "<h1>Todos API response </h1>";
+      data.forEach((task) => {
+        let { id, title, completed } = task;
+        userTask += `
+            <div class="box" id=${id}>
+            <h2>Task number: ${id}</h2>
+             <h3>Task tittle: ${title}</h3>
+            <h5>is tha tak completed: ${completed}</h5>
+            
+            </div>
+            `;
+      });
+      document.querySelector(".result").innerHTML = userTask;
     })
     .catch((err) => console.log(err));
 }
