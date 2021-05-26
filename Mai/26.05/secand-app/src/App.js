@@ -3,7 +3,7 @@ let name="hamza";
 function App() {
   return (
     <div className="App">
-      <h1 className="App-header">
+      <h1>
         hi im react
        <Text />
        <Hallo userName={name}/>
