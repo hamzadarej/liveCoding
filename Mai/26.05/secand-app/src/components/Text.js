@@ -3,6 +3,6 @@ function Text(){
     return (<div> hey , I an components</div>)
 };
 function Hallo(props){
-    return (<div>welcome {props.userName} to react </div>)
+    return (<div>hallo {props.userName} ,you are {props.age} welcome  to react </div>)
 };
 export  {Text,Hallo};
