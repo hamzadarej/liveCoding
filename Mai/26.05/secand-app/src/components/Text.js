@@ -5,4 +5,7 @@ function Text(){
 function Hallo(props){
     return (<div>hallo {props.userName} ,you are {props.age} welcome  to react </div>)
 };
-export  {Text,Hallo};
+function Date(props){
+    return (<div>Today is {props.year}.</div>)
+}
+export  {Text,Hallo,Date};
