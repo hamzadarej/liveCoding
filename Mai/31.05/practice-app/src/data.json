@@ -1,5 +1,32 @@
 [
-    {"id":1,"name":"hamza","age":27 ,"emoji":"😁","likes":"6850 ❤️","comment":"1560 💬","city":"Leipzig","img":"https://www.leipzig-im.de/images/bilder/Augustusplatz-City-Hochhaus-Universitaet-und-Krochhaus_Andreas-Schmidt_leipzig.jpg"} ,
-    {"id":2,"name":"salim","age":30 ,"emoji":"😸","likes":"15680 ❤️" ,"comment":"7822 💬","city":"Berlin","img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRoZlRVvOQ79Cee18zdT4bgOAgKDAu2-p4-5Orh6MeQD1oDkERUximS78SiLUi6nmsVqU&usqp=CAU"},
-    {"id":3,"name":"Anis","age":31 ,"emoji":"😻","likes":"22012 ❤️" ,"comment":"12790 💬","city":"München","img":"https://img.static-af.com/images/meta/IDname/CITY-MUC-1?aspect_ratio=2:1&max_width=1920"}
+  {
+    "id": 1,
+    "name": "hamza",
+    "age": 27,
+    "emoji": "😁",
+    "likes": "6850",
+    "comment": "1560",
+    "city": "Leipzig",
+    "img": "https://www.leipzig-im.de/images/bilder/Augustusplatz-City-Hochhaus-Universitaet-und-Krochhaus_Andreas-Schmidt_leipzig.jpg"
+  },
+  {
+    "id": 2,
+    "name": "salim",
+    "age": 30,
+    "emoji": "😸",
+    "likes": "15680 ",
+    "comment": "7822 ",
+    "city": "Berlin",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRoZlRVvOQ79Cee18zdT4bgOAgKDAu2-p4-5Orh6MeQD1oDkERUximS78SiLUi6nmsVqU&usqp=CAU"
+  },
+  {
+    "id": 3,
+    "name": "Anis",
+    "age": 31,
+    "emoji": "😻",
+    "likes": "22012 ",
+    "comment": "12790",
+    "city": "München",
+    "img": "https://img.static-af.com/images/meta/IDname/CITY-MUC-1?aspect_ratio=2:1&max_width=1920"
+  }
 ]

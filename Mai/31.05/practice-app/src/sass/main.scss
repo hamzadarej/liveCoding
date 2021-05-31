@@ -15,10 +15,13 @@ body {
 .box {
   display: flex;
   flex-direction: row;
-  width: 60vw;
+  width: 65vw;
   height: 30vh;
   align-items: center;
   justify-content: center;
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding:0px 10px;
 }
 .text {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -29,6 +32,10 @@ body {
 }
 .likeAndCo {
   font-weight: bold;
-  font-family: fantasy;
+  font-family: monospace;
   color: wheat;
+}
+.likeAndCo i {
+    font-size: x-large;
+    color: red;
 }

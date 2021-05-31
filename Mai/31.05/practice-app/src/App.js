@@ -1,6 +1,6 @@
 import React from "react" ;
 import Data from "./data.json";
-//import { add } from "./helpers";
+import { comment } from "./helpers";
 //const users =Data.map((obj)=><div key={obj.id}>{obj.name} and I'm {obj.age} old and I live in {obj.img}</div>)
 function App() {
   const users =Data.map((obj)=>{
@@ -8,9 +8,9 @@ function App() {
     
       return(<div className="box" key={id}>
         <div><h3 className="text"> I'm {name} and I'm {age} old and i live in {city}, {emoji} </h3> 
-        <span className="likeAndCo">{likes} {comment}</span></div>
+        <span className="likeAndCo">{likes} <i>❤️</i> {comment}💬</span></div>
         
-        <img alt="cityImg" src={img}/>
+        <img alt="cityImg" src={img} />
         
          </div> )
     
