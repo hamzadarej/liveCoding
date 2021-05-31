@@ -1,0 +1,5 @@
+[
+    {"id":1,"name":"hamza","age":27 ,"city":"Leipzig","img":"https://www.leipzig-im.de/images/bilder/Augustusplatz-City-Hochhaus-Universitaet-und-Krochhaus_Andreas-Schmidt_leipzig.jpg"} ,
+    {"id":2,"name":"salim","age":30,"city":"Berlin","img":"https://image.posterlounge.com/img/products/390000/388478/388478_poster_l.jpg"},
+    {"id":3,"name":"Anis","age":31,"city":"München","img":"https://img.static-af.com/images/meta/IDname/CITY-MUC-1?aspect_ratio=2:1&max_width=1920"}
+]
