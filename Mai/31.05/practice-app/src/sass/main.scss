@@ -1,11 +1,11 @@
 body {
-    background:linear-gradient(120deg,lightblue,darkblue) ;
+  background: linear-gradient(120deg, lightblue, darkblue);
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  
+
   img {
     width: 200px;
     height: 150px;
@@ -13,17 +13,22 @@ body {
   }
 }
 .box {
-    display: flex;
-    flex-direction: row;
-    width: 60vw;
-    height: 30vh;
-    align-items: center;
-    justify-content:center
-    ;
-
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
 }
 .text {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-shadow: 1px 1px gray;
-    
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: 1px 1px gray;
+  color: white;
+  display: block;
+  height: 10vh;
+}
+.likeAndCo {
+  font-weight: bold;
+  font-family: fantasy;
+  color: wheat;
 }
