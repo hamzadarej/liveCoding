@@ -22,23 +22,35 @@
   }
   .container {
     height: 50vh;
-    width: 50%;
-    border: 1px solid black;
+    width: 70%;
+    
     padding-top: 30px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: snow;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px purple;
+    background: linear-gradient(190deg,#9b59b6, #71b7e6);
   }
   .footer {
     width: 100vw;
 
     position: absolute;
-    bottom: 0;
+    bottom: 4px;
     text-align: center;
   }
   input[type="text"] {
     background-color: rgb(216, 230, 216);
+    appearance: none;
+    font-size: large;
+    padding: 3px;
+    margin-right: 4px;
+    box-shadow: 1px 1px 1px white;
+    
+  }
+  input[type="submit"] {
+    font-size: large;
+    padding: 3px;
   }
 }
