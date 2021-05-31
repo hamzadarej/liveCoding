@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {v4 as uuidv4} from "uuid";
 
 const List = (props) => {
   //   console.log(props);
@@ -10,10 +11,11 @@ const List = (props) => {
   }
   function submitHandle(e) {
     e.preventDefault();
+    console.log(uuidv4())
     // prevState holds on the value of state before any update on the state
     props.setList((prevState) => [
       ...prevState,
-      { id: prevState.length, title: userInput.trim(), done: false },
+      { id: uuidv4(), title: userInput.trim(), done: false },
     ]);
     setUserInput("");
   }

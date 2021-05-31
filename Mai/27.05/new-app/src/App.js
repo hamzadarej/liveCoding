@@ -14,16 +14,18 @@ function App() {
   };
   const check = (itemToCheck) => {
     // itemToCheck has the id for that specific item
-    console.log(itemToCheck);
-    list.filter((item) => {
+    setList((prevState)=>{
+    
+    prevState.filter((item) => {
       if (item.id === itemToCheck) {
         // revers done
         item.done = !item.done;
       }
       return item;
-    });
-    console.log(list);
-  };
+    })
+   }
+  );
+  }
   console.log(useState);
   return (
     <React.Fragment>
