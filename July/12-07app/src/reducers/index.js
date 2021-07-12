@@ -4,14 +4,17 @@ const allReducers = (state,action)=>{
     switch(action.type){
        case "INCREMENT":
            return{
-               ...state,counter:state.counter +1,
+               ...state,
+               counter: state.counter +1,
            };
            case "DECREMENT":
            return{
-            ...state,counter:state.counter -1,
+            ...state,
+            counter: state.counter -1,
            };
            case "CHANGE_NAME":
-           return{...state,userName:action.payload,};
+           return{...state,
+            userName:action.payload,};
            default :
            return state;
 
