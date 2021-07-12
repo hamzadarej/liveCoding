@@ -12,7 +12,7 @@
         </Fragment>
     }
     const mapStateToProps =(store)=>{
-        return {store,}
+        return {store}
     };
     const mapDispatchToProps={changeName};
     export default connect(mapStateToProps,mapDispatchToProps)(ParentComponent);

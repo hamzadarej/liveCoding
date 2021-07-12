@@ -11,13 +11,13 @@ const childComponent=(props)=>{
         <Fragment>
             <hr/>
             {store.counter}
-            <button onClick={()=> increment}>+</button>
-            <button onClick={()=> decrement}>-</button>
+            <button onClick={()=> increment()}>+</button>
+            <button onClick={()=> decrement()}>-</button>
         </Fragment>
 
     )
 }
-const mapStateToProps=(store)=>{return {store,}};
+const mapStateToProps=(store)=>{};
 const mapDispatchToProps = { increment, decrement };
 export default connect(mapStateToProps,mapDispatchToProps)(childComponent);
 
