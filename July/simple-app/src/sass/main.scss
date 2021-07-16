@@ -1,0 +1,124 @@
+:root {
+  font-size: 16px;
+  font-family: "Open Sans";
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --transition-speed: 400ms;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  //overflow: hidden;
+}
+.solar {
+  --text-primary: #576e75;
+  --text-secondary: #35535c;
+  --bg-primary: #fdf6e3;
+  --bg-secondary: #f5e5b8;
+}
+
+.light {
+  --text-primary: #1f1f1f;
+  --text-secondary: #000000;
+  --bg-primary: #ffffff;
+  --bg-secondary: #e4e4e4;
+}
+
+.dark {
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+}
+.App {
+  background-color: orange;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  flex-direction: row;
+  align-items: flex-start;
+}
+nav {
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  transition: width var(--transition-speed) ease;
+}
+
+nav ul li {
+  list-style: none;
+  width: 6rem;
+  height: 4rem;
+  padding: 7px;
+  position: relative;
+  align-items: center;
+}
+nav ul li a {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  color: var(--text-primary);
+  font-size: large;
+  text-decoration: none;
+}
+
+nav ul li:last-child {
+  position: absolute;
+  bottom: 0;
+}
+.main {
+  width: 95vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 20px;
+  margin: 15px;
+}
+.nav-text {
+  display: none;
+  text-decoration: none;
+}
+#firstItem {
+  font-size: x-large;
+}
+nav:hover {
+  width: 10rem;
+  justify-content: flex-start;
+
+  .nav-item {
+    justify-content: flex-start;
+  }
+  #firstItem {
+    justify-content: center;
+    font-size: x-large;
+  }
+  .nav-text {
+    display: block;
+    color: var(--text-secondary);
+
+    padding-left: 8px;
+    text-decoration: none;
+    font-size: large;
+  }
+  .closed {
+    display: block;
+  }
+  .opened {
+    display: none;
+  }
+}
+.closed {
+  display: none;
+}
