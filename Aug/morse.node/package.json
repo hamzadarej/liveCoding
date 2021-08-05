@@ -1,0 +1,16 @@
+{
+  "name": "morse.node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy": "chmod +x src/index.js && npm link",
+    "undeploy": "npm unlink"
+  },
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "morse": "src/index.js"
+  }
+}
