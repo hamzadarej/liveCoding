@@ -11,7 +11,7 @@ myServer.listen(8000, () =>
 
 myServer.get("/user/:id", (request, response) => {
   const users = ["hamza", "salim ", "anis", "caro","ahmed"];
-  request.params.id > 4
+  request.params.id > 4 
     ? response.send(` you entered ${request.params.id} enter a number between 0 and 4`)
     : response.send("the user name is " + users[request.params.id]);
 });
