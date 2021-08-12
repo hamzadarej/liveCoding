@@ -1,0 +1,22 @@
+{
+  "art": [
+    {
+      "name": "hamza",
+      "id": "3"
+    },
+    {
+      "name": "hamza",
+      "id": "2"
+    }
+  ],
+  "num": 7,
+  "user": {
+    "names": [
+      "hamza",
+      "salim",
+      "anis",
+      "Sophie",
+      "caro"
+    ]
+  }
+}
