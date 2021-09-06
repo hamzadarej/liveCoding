@@ -1,0 +1,26 @@
+<h1>{{title}}</h1>
+{{#if errors}}
+  <div>
+    <ul>
+      {{#each errors}}
+        {{! errors.map(err => err aka this)}}
+        <li>{{this.msg}}</li>
+      {{/each}}
+    </ul>
+  </div>
+{{/if}}
+<form method="POST" action="/submit">
+<label for="email">
+    <input type="email" id="email" name="email" placeholder="your email"></input>
+</label>
+<label for="pass">
+    <input type="password" id="pass" name="pass" placeholder="your password"></input>
+</label>
+<label for="passConf">
+    <input type="password" id="passConf" name="passConf" placeholder="conf ur pass"></input>
+</label>
+<label for="submit">
+    <input type="submit" id="submit" value="Send"></input>
+</label>
+
+</form>
