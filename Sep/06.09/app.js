@@ -20,7 +20,7 @@ app.engine(
 //setups
 //const cookieParser = require("cookie-parser");
 const expressSession = require("express-session");
-const { body, validationResult } = require("express-validator");
+var { body, validationResult } = require("express-validator");
 
 
 // use it
@@ -55,6 +55,7 @@ app.get("/", (req, res) => {
   req.session.errors = null;
 
 });
+// middleware
 const userExict= require("./middleware/middleware")
 // post req
 
