@@ -3,6 +3,7 @@ var bodyParser = require("body-parser");
 const app = express();
 const path = require("path");
 const morgan = require("morgan");
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(morgan("dev"));
 const hbs = require("express-handlebars");
@@ -54,12 +55,13 @@ app.get("/", (req, res) => {
   req.session.errors = null;
 
 });
+const userExict= require("./middleware/middleware")
 // post req
 
 app.post(
-  "/submit",
+  "/submit",userExict,
   body("email", "Please write valid email").isEmail(),
-  body("pass", "invalid pass").isLength({ min: 5 }),
+  body("pass", "invalid pass").isLength({ min: 5 }).withMessage("min 5 chars"),
   body("passConf").custom((value, { req }) => {
     if (value != req.body.pass) {
       throw (

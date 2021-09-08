@@ -1,4 +1,10 @@
 <h1>{{title}}</h1>
+{{#if done}}
+  <div>
+    <h4>Every thing is cool 👍🏻</h4>
+    <a href="/">Sign up again</a>
+  </div>
+{{else}}
 {{#if errors}}
   <div>
     <ul>
@@ -24,3 +30,4 @@
 </label>
 
 </form>
+{{/if}}
