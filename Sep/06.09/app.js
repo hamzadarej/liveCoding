@@ -21,6 +21,7 @@ app.engine(
 const expressSession = require("express-session");
 const { body, validationResult } = require("express-validator");
 
+
 // use it
 app.use(express.json());
 //app.use(cookieParser());
@@ -42,7 +43,7 @@ mongoose
     console.log(`There was a problem ${error.message}`);
   });
 const userData = require("./model/usersModel");
-
+// get req
 app.get("/", (req, res) => {
   res.render("index", {
     title: "Validation",
@@ -53,11 +54,10 @@ app.get("/", (req, res) => {
   req.session.errors = null;
 
 });
-const 
-  checkPassConf
- = require("./middleware/middleware");
+// post req
+
 app.post(
-  "/submit",checkPassConf,
+  "/submit",
   body("email", "Please write valid email").isEmail(),
   body("pass", "invalid pass").isLength({ min: 5 }),
   body("passConf").custom((value, { req }) => {
@@ -70,6 +70,14 @@ app.post(
     return true;
   }),
   async (req, res) => {
+    const errors=validationResult(req);
+    if(!errors.isEmpty()){
+      res.render("index",{
+        title: "check your info !",
+        errors:errors.array()
+      })
+    
+    }else{
     const user = new userData({
       email: req.body.email,
       password: req.body.pass,
@@ -79,11 +87,15 @@ app.post(
       const newUser = await user.save();
       console.log(newUser);
 
-      res.status(201).json({ message: "new User Added successfully", newUser });
+      
+      res.render("index",{
+        title:"Nice you are in our DB",
+        done:true
+      })
     } catch (err) {
       res.status(400).json({
         message: err.message,
-      });
+      });}
     }
   }
   
