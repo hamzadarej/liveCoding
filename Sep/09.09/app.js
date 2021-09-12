@@ -17,7 +17,7 @@ app.engine(
     layoutsDir: __dirname + "/views/layouts",
   })
 );
-//
+// use session
 const session = require("express-session");
 const cookieParser = require("cookie-parser");
 app.use(session({ secret: "dark-code" }));
@@ -25,6 +25,7 @@ app.use(session({ secret: "dark-code" }));
 app.use(express.json());
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(session(), cookieParser());
 
 // connect Mongoose
 
@@ -42,7 +43,7 @@ mongoose
 app.get("/hbs", (req, res) => {
   res.render("index", { title: "hbs", data: "welcome to handlebars home" });
 });
-//const bookController = require("./controller/bookController");
+
 app.get("/contact", (req, res) => {
   res.render("contact", {
     title: "addAuthor",
@@ -51,29 +52,31 @@ app.get("/contact", (req, res) => {
 });
 
 app.post("/submit", async (req, res) => {
-  
-
   const author = await new AuthorModel({
     authorName: req.body.authorName,
-    books:[{title:req.body.title,issueYear:req.body.issueYear}],
-    language:[{languageNumber:req.body.languageNumber,languageList:req.body.languageList}],
-  });   
+    books: [{ title: req.body.title, issueYear: req.body.issueYear }],
+    language: [
+      {
+        languageNumber: req.body.languageNumber,
+        languageList: req.body.languageList,
+      },
+    ],
+  });
 
- 
   try {
     const newOne = await author.save();
-    //console.log(newOne);  
+    //console.log(newOne);
     res.render("contact", {
-      title: "Nice you are in our DB",newOne
-    
+      title: "Nice you are in our DB",
+      data: newOne,
     });
   } catch (err) {
     res.status(400).render({
       title: err.message,
     });
   }
-}); 
-
+});
+//const bookController = require("./controller/bookController");
 // GET ALL && POST AUTHORS
 /*
 app.route("/").get(bookController.getAll).post(bookController.addNewAuthors);
