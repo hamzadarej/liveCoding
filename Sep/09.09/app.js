@@ -55,22 +55,11 @@ app.post("/submit", async (req, res) => {
 
   const author = await new AuthorModel({
     authorName: req.body.authorName,
-
+    books:[{title:req.body.title,issueYear:req.body.issueYear}],
+    language:[{languageNumber:req.body.languageNumber,languageList:req.body.languageList}],
   });   
-  req.body.books.split().map((book) => {
-    author.books.push({
-      title: book.title,
-      issueYear: book.issueYear,
-    });
-  });
-  req.body.language.split().map((lang) => {
-    author.language.push({
-      languageNumber: lang.languageNumber,
-      languageList: lang.languageList,
-    });
-  });
-    
 
+ 
   try {
     const newOne = await author.save();
     //console.log(newOne);  
