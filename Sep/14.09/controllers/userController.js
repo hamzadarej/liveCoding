@@ -17,7 +17,6 @@ userControllers.getAllUsers = async (req, res) => {
 userControllers.addNewUser = async (req, res) => {
   try {
     const hashedPass = await bcrypt.hash(req.body.password, 10);
-    console.log(hashedPass);
     const newUser = await new User({
       _id: mongoose.Types.ObjectId(),
       username: req.body.username,
@@ -28,6 +27,24 @@ userControllers.addNewUser = async (req, res) => {
     // 10 is one of the rounds series
   } catch (err) {
     res.status(400).json({ message: err.message });
+  }
+};
+// post login
+userControllers.logIn = async (req, res) => {
+  try {
+    const user = await User.findOne({ username: req.body.username });
+    const checkPass = await bcrypt.compare(req.body.password, user.password);
+    if (!checkPass) {
+      return res
+        .status(400)
+        .json({ message: "false password please try again " });
+    } else {
+      return res
+        .status(200)
+        .json({ message: "you are logged in successfully" });
+    }
+  } catch (err) {
+    res.status(404).json({ message: err.message });
   }
 };
 module.exports = userControllers;

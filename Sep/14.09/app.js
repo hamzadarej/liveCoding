@@ -19,8 +19,9 @@ const userControllers = require("./controllers/userController");
 const userMiddleware = require("./middleware/middleware");
 //Get allUsers
 app
-  .route("/") 
+  .route("/")
   .get(userControllers.getAllUsers)
-  .post(userMiddleware.checkUser,userControllers.addNewUser);
+  .post(userMiddleware.checkUser, userControllers.addNewUser);
+  app.route("/login").post(userMiddleware.userExict,userControllers.logIn)
 
-module.exports = app; 
+module.exports = app;
