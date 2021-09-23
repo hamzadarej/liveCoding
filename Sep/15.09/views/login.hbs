@@ -1,0 +1,31 @@
+<h1>{{title}} </h1>
+{{#if done}}
+  {{!We need user Avatar here :) }}
+
+  <img
+    src="http://localhost/user/{{avatar}}"
+    alt="{{username}}"
+    width="100px"
+  />
+  <a href="/logout">Logout</a>
+{{else}}
+  <form method="POST" action="/login">
+    <label for="username">
+      <input type="text" name="username" id="username" placeholder="Username" />
+    </label>
+    <label for="password">
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password"
+      />
+    </label>
+
+    <label for="submit">
+      <input type="submit" value="Login" />
+    </label>
+  </form>
+  Or
+  <a href="/">Register</a>
+{{/if}}

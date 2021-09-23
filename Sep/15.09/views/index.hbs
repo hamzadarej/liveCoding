@@ -1,0 +1,48 @@
+<h1>{{title}}</h1>
+{{#if done}}
+  <div>
+    <h4>Every thing is cool</h4>
+    If you want
+    <a href="/logout">logout</a>
+  </div>
+{{else}}
+  {{#if errors}}
+    <div>
+      <ul>
+        {{#each errors}}
+          <li>{{this.msg}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  {{/if}}
+
+  <form method="POST" action="/register" enctype="multipart/form-data">
+    <label for="username">
+      <input type="text" name="username" id="username" placeholder="Username" />
+    </label>
+    <label for="password">
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password"
+      />
+    </label>
+    <label for="password">
+      <input
+        type="password"
+        name="confPassword"
+        id="confPassword"
+        placeholder="Confirm password"
+      />
+    </label>
+    <label for="avatar">
+      <input type="file" name="avatar" id="avatar" />
+    </label>
+    <label for="submit">
+      <input type="submit" value="Register" />
+    </label>
+  </form>
+  Or
+  <a href="/login">login</a>
+{{/if}}
