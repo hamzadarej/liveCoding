@@ -19,7 +19,8 @@ userControllers.getAllUsers = async (req, res) => {
           avatar: user.avatar,
         };
       }),
-    });} catch (err) {
+    });
+  } catch (err) {
     res.status(500).json({ message: err.message });
   }
 };
@@ -42,7 +43,7 @@ userControllers.addUser = async (req, res) => {
       username: req.body.username,
       password: hashedPassword,
       role: "ADMIN",
-     // role: "USER",
+      // role: "USER",
       avatar: req.file.path,
     });
     console.log(newUser);
@@ -100,9 +101,9 @@ userControllers.logout = async (req, res) => {
   res.redirect("/");
 };
 userControllers.getOne = async (req, res) => {
-  const username= req.params.username;
+  const username = req.params.username;
   try {
-    const user = await User.find({username});
+    const user = await User.find({ username });
     res.status(200).render("data", {
       data: user.map((user) => {
         return {
