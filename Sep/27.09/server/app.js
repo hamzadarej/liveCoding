@@ -1,0 +1,51 @@
+const express = require("express");
+const app = express();
+const morgan = require("morgan");
+app.use(morgan("dev"));
+// cookie, session
+const cookieParser = require("cookie-parser");
+const expressSession = require("express-session");
+
+// to process the data
+app.use(express.json());
+// Let Express understand  Content-Type: application/x-www-form-urlencoded aka form data
+
+app.use(
+  express.urlencoded({
+    extended: true,
+  })
+);
+
+// cookies
+app.use(cookieParser());
+// Session
+app.use(
+  expressSession({
+    secret: "somethingSecret",
+    saveUninitialized: false,
+    resave: false,
+  })
+);
+// mongoDB
+const mongoose = require("mongoose");
+mongoose
+  .connect(process.env.DB_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(console.log("DB is connected 😎"))
+  .catch((error) => {
+    console.log(`There was a problem ${error.message}`);
+  });
+// Alow uploads
+//app.use("/uploads", express.static("uploads"));
+const User = require("../server/models/userModel");
+
+app.get("/users", async (req, res) => {
+  //const users = ["Zain", "Nancy", "Olga", "Jack"];
+  const getAll = await User.find();
+  res.status(200).json(getAll);
+  //console.log(getAll);
+});
+
+module.exports = app;
