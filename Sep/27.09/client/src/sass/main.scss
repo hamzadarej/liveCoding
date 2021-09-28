@@ -1,9 +1,46 @@
-
-table ,tr ,td {
-    border:1px solid blue;background-color:yellow;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color:rgb(241, 227, 227);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+table {
+  width: 50vw;
+}
+table,
+tr,
 td {
-    padding:5px;
-    width: 3rem;
-    text-align:center;
+  border: 1px solid rgb(42, 42, 48);
+  background-color: rgb(212, 212, 153);
+}
+td,
+th {
+  padding: 5px;
+  width: 3rem;
+  height: 1rem;
+  text-align: center;
+}
+img {
+  width: 50px;
+}
+.addUser {
+  height: 6rem;
+  border: solid 1px rgb(201, 145, 145);
+  margin-top: 10px;
+  width: 50vw;
+  background-color: rgb(212, 212, 153);
+  padding:10px;
+}
+button{
+  padding:5px;
+  color: blueviolet;
+  width:80px;
 }
