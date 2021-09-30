@@ -1,0 +1,35 @@
+.App {
+    width: 50vw;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: gray;
+    color: white;
+  }
+  
+  .reg,
+  .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  input {
+    width: 10rem;
+    height: 2rem;
+    border: none;
+    display: block;
+    background-color: gray;
+    border-bottom: 2px solid orange;
+    color: white;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: white;
+    }
+  }
