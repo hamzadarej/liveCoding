@@ -2,12 +2,12 @@ const User = require("../models/userModel");
 const bcrypt = require("bcrypt");
 const mongoose = require("mongoose");
 //const jwt = require("jsonwebtoken");
-const { createToken, checkToken } = require("../JWT-check");
+const { createToken } = require("../JWT-check");
 const controllers = {};
 controllers.getAll = async (req, res) => {
   try {
     const users = await User.find();
-     res.json(users).end();
+    res.json(users).end();
   } catch (err) {
     res.status(500).json({
       message: err.message,
@@ -58,6 +58,7 @@ controllers.login = async (req, res) => {
           username: user.username,
           role: user.role,
           avatar: user.avatar,
+          password: user.password,
         },
       });
     } else {
@@ -69,5 +70,8 @@ controllers.login = async (req, res) => {
     res.status(err.status).json({ message: err.message });
   }
 };
-
+controllers.logout = async (req, res) => {
+  res.cookie("token-key", "", { maxAge: 1 });
+  res.redirect("/");
+};
 module.exports = controllers;

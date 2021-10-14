@@ -10,17 +10,17 @@ function App() {
     <div className="App">
       <h1>Menu</h1>
       <Router>
-        <Route path="/" exact component={Home} />
-        {/*    <Route path="/" exact render={Home} />
-        <Route
+         <Route path="/" exact component={Home} />
+         {/*    <Route path="/" exact render={Home} />
+          <Route
           path="/"
           exact
           component={() => {
-            <Home name="Hadi" />;
+          <Home name="Hadi" />;
           }}
-        />
+          />
     
-    */}
+         */}
         <Route path="/register" exact component={Register} />
         <Route path="/users" exact component={Users} />
         <Route path="/login" exact component={Login} />

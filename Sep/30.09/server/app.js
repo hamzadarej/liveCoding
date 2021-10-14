@@ -79,5 +79,6 @@ console.log(process.env.TOKEN_TEXT);
 app.get("/users", controllers.getAll);
 app.post("/register", upload.single("avatar"), controllers.register);
 app.post("/login", controllers.login);
-//app.get("/checkAuth", checkToken);
+app.get("/checkAuth", checkToken);
+app.get("/logout",controllers.logout)
 module.exports = app;
